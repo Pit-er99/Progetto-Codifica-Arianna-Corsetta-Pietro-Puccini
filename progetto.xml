@@ -1,0 +1,1061 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<?xml-stylesheet href="progetto.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="it">
+    <teiHeader>
+        <fileDesc>
+            <!-- Descrizione del testo di stanpo bibliografico-->
+            <titleStmt>
+                <title>La Rassegna settimanale di politica, scienze, lettere ed arte</title>
+                <author>
+                    <persName>
+                        <forename>Leopoldo</forename> <surname>Franchetti</surname>
+                    </persName>
+                </author>
+                <author>
+                    <persName>
+                        <forename>Sydney</forename> <surname>Sonnino</surname>
+                    </persName>
+                </author>
+                <!-- Principale curatore del progetto-->
+                <principal>
+                    <persName>Leonardo Musci</persName>
+                </principal>
+                <!-- Principali resposabili di aspetti del progetto-->
+                <respStmt>
+                    <resp>Cura del progetto</resp>
+                    <persName>
+                        <forename>Leonardo</forename>
+                        <surname>Musci</surname>
+                    </persName>
+                    <orgName>Memoria srl</orgName>
+                </respStmt>
+                <respStmt>
+                    <resp>Sviluppo</resp>
+                    <orgName>Made in Tomorrow SRL</orgName>
+                </respStmt>
+                <respStmt>
+                    <resp>Digitalizzazione</resp>
+                    <orgName>CNI spa</orgName>
+                </respStmt>
+                <respStmt>
+                    <resp>Codifica di tre testi dalla raccolta a cura di</resp>
+                    <persName>
+                        <forename>Arianna</forename>
+                        <surname>Corsetta</surname>
+                    </persName>
+                    <persName>
+                        <forename>Pietro</forename>
+                        <surname>Puccini</surname>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+
+             <!-- Indicazione sulla pubblicazione dei contenuti-->
+            <publicationStmt>
+                <publisher>Università di Pisa</publisher>
+                    <pubPlace>Pisa</pubPlace>
+                    <date when = "10/02/2026">10 febbraio 2026</date>
+                    <availability status="free">
+                        <p>Licenza Open Source non commerciale</p>
+                    </availability>
+                </publicationStmt>
+
+            <!-- Note sul contenuto-->
+            <notesStmt>
+                <note xml:id="footer">Codifica di una selezione di tre articoli tratti della "Rassegna settimanale di politica, scienze, lettere ed arte", due occorrenze della sua sezione Bibliografia, e una occorrenza della sezione Notizie</note>
+                <note xml:id="title">Codifica nell'ambito di un progetto accademico per l'esame "Codifica di Testi", triennale di Informatica umanistica </note>
+            </notesStmt>
+
+            <!-- Info sulla fonte del documento da cui la codifica-->
+            <sourceDesc>
+                <bibl xml:id="RS">
+                    <title>La Rassegna settimanale di politica, scienza, lettere ed arti. Volume 1, 1878</title>
+                    <publisher>Casa Editrice Barbera</publisher>
+                    <pubPlace>Firenze</pubPlace>
+                    <editor>
+                        <persName>
+                            <forename>Leopoldo</forename> <surname>Franchetti</surname>
+                        </persName>
+                        <persName>
+                            <forename>Sydney</forename> <surname>Sonnino</surname>
+                        </persName>
+                    </editor>
+                    <date>1878</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <!-- Descrizione del progetto nelle sue finalità e nel suo scopo-->
+            <projectDesc>
+                <p>Testi scelti e codificati nell'ambito del progetto dell'esame Codifica di Testi, tenuto dal professore Angelo Mario Del Grosso.</p>
+            </projectDesc>
+            <!-- Descrizione delle modalità di campionamento e selezione dei testi -->
+            <samplingDecl>
+                <p>Testi selezionati sulla base delle indicazioni formite dal docente e sul nostro interesse personale per gli argomenti trattati.</p>
+                <p>Sono stati scelti 3 testi dalle sezione articoli, 2 occorrenze della sezione Bibliografia e 1 sezione Notizie.</p>
+            </samplingDecl>
+            <!-- Info su pratiche editoriali applicate durante la codifica-->
+             <editorialDecl>
+                <hyphenation>
+                    <p>Tutti i trattini di stacco delle parole per passare alla colonna successiva non sono stati trascritti.</p>
+                </hyphenation>
+                <normalization>
+                    <p>Si è scelto di normalizzare gli spazi in eccesso, presenti talvolta tra le parole e i segno di punteggiatura o tra le parole e gli apostrofi.</p>
+                </normalization>
+                <punctuation>
+                    <p>La punteggiatura è stata mantenuta quale quella originale.</p>
+                </punctuation>
+                <quotation>
+                    <p>Tutte le virgolette di apertura e chiusura, qualora non lo fossero già, sono state convertite nella forma "".</p>
+                </quotation>
+                <interpretation>
+                    <p>I temi scelti differiscono per i tre articoli: le sottolineature dell'impresa dell'archeologo Schliemann in "MICENE", le critiche al grottesco delle novelle del Gusman e le critiche al modo moderno di gestire i conservatori, nell'articolo a loro dedicato</p>
+                </interpretation>
+             </editorialDecl>
+            <!-- Definizione della/le tassonimie utilizzate-->
+             <classDecl>
+                <taxonomy xml:id="theme">
+                    <category xml:id="sch">
+                        <catDesc>Passi del testo che evidenziano il successo dello Schliemann</catDesc>
+                    </category>
+                    <category xml:id="conservatori">
+                        <catDesc>Problemi riscontrati nei conservatori al giorno d'oggi.</catDesc>
+                    </category>
+                    <category xml:id="grottesco">
+                        <catDesc>Elementi di critica del grottesco nelle novelle.</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="forme">
+                    <category xml:id="arcaismo">
+                        <catDesc>Forma arcaica di "conservatori"</catDesc>
+                    </category>
+                </taxonomy>
+             </classDecl>
+        </encodingDesc>
+    </teiHeader>
+
+    <!-- Mappatura immagini: si ritagliano le sezioni dagli screen delle pagine del giornale-->
+    <facsimile>
+    <surface xml:id="micene1">
+        <graphic url="screenpagine/micene1.jpg" width="1080.4px" height="1631.4px"/>
+        <zone xml:id="micene_zona1" ulx="41" uly="1028" lrx="544" lry="1540"/>
+        <zone xml:id="micene_zona2" ulx="544" uly="125" lrx="1047" lry="1541"/>
+    </surface>
+    <surface xml:id="micene2">
+        <graphic url='screenpagine/micene2.jpg' width='1080.4px' height='1604.4px'/>
+        <zone xml:id="micene2_zona1" ulx="54" uly="90" lrx="563" lry="1516"/>
+        <zone xml:id="micene2_zona2" ulx="561" uly="91" lrx="1062" lry="1515"/>
+    </surface>
+    <surface xml:id="micene3">
+        <graphic url="screenpagine/micene3.jpg" width="1080.4px" height="1615.4px"/>
+        <zone xml:id="micene3_zona1" ulx="45" uly="104" lrx="549" lry="1528"/>
+        <zone xml:id="micene3_zona2" ulx="548" uly="108" lrx="1052" lry="441"/>
+    </surface>
+    <surface xml:id="gusman1">
+        <graphic url='screenpagine/gusman1.jpg' width='1043.4px' height='1526.4px'/>
+        <zone xml:id="gusman1_zona1" ulx="522" uly="983" lrx="1002" lry="1452"/>
+    </surface>
+    <surface xml:id="gusman2">
+        <graphic url='screenpagine/gusman2.jpg' width='1028.4px' height='1496.4px' />
+        <zone xml:id="gusman2_zona1" ulx="36" uly="91" lrx="523" lry="712"/>
+    </surface>
+    <surface xml:id="conservatori1">
+        <graphic url='screenpagine/conservatori1.jpg' width='1028.4px' height='1496.4px' />
+        <zone xml:id="conservatori1_zona1" ulx="41" uly="716" lrx="529" lry="1431"/>
+        <zone xml:id="conservatori1_zona2" ulx="520" uly="90" lrx="1003" lry="1432"/>
+    </surface>
+    <surface xml:id="conservatori2">
+        <graphic url='screenpagine/conservatori2.jpg' width='1043.4px' height='1520.4px' />
+        <zone xml:id="conservatori2_zona1" ulx="46" uly="101" lrx="529" lry="1452"/>
+        <zone xml:id="conservatori2_zona2" ulx="529" uly="106" lrx="1002" lry="780"/>
+    </surface>
+    <surface xml:id="biblio1">
+        <graphic url='screenpagine/biblio1.jpg' width='1044.4px' height='1521.4px' />
+        <zone xml:id="biblio1_zona1" ulx="546" uly="241" lrx="1022" lry="982"/>
+        <zone xml:id="biblio1_zona2" ulx="558" uly="982" lrx="1036" lry="1437"/>
+    </surface>
+    <surface xml:id="biblio2">
+        <graphic url='sceenpagine/biblio2.jpg' width='1023.4px' height='1513.4px' />
+        <zone xml:id="biblio2_zona1" ulx="7" uly="65" lrx="505" lry="639"/>
+    </surface>
+    <surface xml:id="notizie1">
+        <graphic url='screenpagine/notizie1.jpg' width='960.4px' height='1401.4px' />
+        <zone xml:id="notizie1_zona1" ulx="37" uly="1192" lrx="501" lry="1363"/>
+        <zone xml:id="notizie1_zona2" ulx="498" uly="95" lrx="942" lry="1248"/>
+    </surface>
+    <surface xml:id="notizie2">
+        <graphic url='screenpagine/notizie2.jpg' width='983.4px' height='1415.4px' />
+        <zone xml:id="notizie2_zona1" ulx="516" uly="583" lrx="955" lry="1228"/>
+    </surface>   
+    </facsimile>
+
+    <text>
+        <body>
+            <div n="1" type="textArticle" xml:id="Micene">
+                <pb facs="screenpagine/micene1.jpg"/>
+                <pb facs="screenpagine/micene2.jpg"/>
+                <pb facs="screenpagine/micene3.jpg"/>
+
+                <!-- Primo articolo: MIcene -->
+                    <head><placeName  type="city">Micene</placeName></head> 
+                        <p>
+                            <lb n="1"/><seg ana="sch">Fu un'ottima idea quella dello <persName role="author" type="real"><surname>Schliemann</surname></persName> di intrapren<lb n="2" break="no"/>
+                            dere scavi a <placeName type="city">Micene</placeName> dopo aver ricercato<placeName type="city">Troja</placeName>, e il buon successo<lb n="3"/> 
+                            l’ha pienamente giustificata conducendolo alla più <lb n="4"/>
+                            importante scoperta archeologica che nel nostro secolo siasi <lb n="5"/>  
+                            fatta in <placeName type="continent">Europa</placeName></seg>. Nella guerra trojana, che è il più illustre <lb n="6"/> 
+                            fatto con cui si apre la storia dei popoli europei, primeg<lb n="7" break="no"/>giano due città, una asiatica che è <placeName type="city">Troja</placeName>, l’altra europea <lb n="9"/>
+                            che è <placeName type="city">Micene</placeName>, la sede dei <rs type="dynasty">Pelopidi</rs>, degli <rs type="dynasty">Atridi</rs>, di <persName type="mythological"><forename>Aga<lb n="10" break="no"/>mennone</forename></persName>,
+                            dei più potenti principi che allora dominassero <lb n="11"/><pb n="2"/>  
+                            in <placeName type="country">Grecia</placeName>. Dove <placeName type="city">Troja</placeName> fosse non si sapeva esattamente: ma <lb n="12"/> 
+                            dove fosse <placeName type="city">Micene</placeName> ben si sapeva. Cedendo all’attrattiva <lb n="13" /> 
+                            dell’ignoto, sempre irresistibile per l’uomo, i dotti a <placeName type="city">Mi<lb n="14" break="no"/>cene</placeName>
+                            poco badarono, e <w type="achaism">inzittutto</w> si occuparono di cercar <lb n="15" />
+                            <placeName type="city">Troja</placeName>, quantunque ben potesse prevedersi che anche tro<lb n="16" break="no"/>vandola, difficile troppo riuscirebbe provare che fosse quella.<lb n="17" />
+                            <seg ana="sch">Fra tutti i cercatori di <placeName type="city">Troja</placeName> lo <persName role="author" type="real"><surname>Schliemann</surname></persName> fu certamente <lb n="18" />
+                            il più fortunato, come fu anche il più avveduto, il più te<lb n="19" break="no"/>nace nel suo proposito e il più illimitante devoto alla <lb n="20"/> 
+                            causa del sapere. </seg><lb n="21"/>
+                        </p>
+                        <note targetEnd="footnote">
+                            <bibl>
+                                <title>Mykenœ, Bericht über meine Entdeckungen in Mykenœ und Tiryus.</title>
+                                <author>
+                                    <persName><roleName>von</roleName> <forename><choice><abbr>H.</abbr> <expan>Heinrich</expan></choice></forename> <surname>Schliemann</surname></persName>,
+                                </author>
+                                <pubPlace>
+                                    <placeName type="city">Leipzig</placeName>
+                                </pubPlace>
+                                <date when="1878">1878</date>
+                            </bibl>
+                        </note> 
+                        <p>
+                            La scoperta di una città antichissima della <placeName type="region">Troade</placeName> al <lb n="22"/> 
+                            disotto della <placeName type="city" rend="italic">Nuova Ilio</placeName> degli antichi, con oggetti d’arte <lb n="23"/><pb n="3"/> 
+                            evidentemente primitiva, è importantissima sott’ogni aspetto. <lb n="24" />
+                            Com’era da prevedersi, lo <persName role="author" type="real"><surname>Schliemann</surname></persName> non è riuscito a con<lb n="25" break="no"/>vincere tutti che quella sia la <placeName type="city">Ilio</placeName> di <persName type="mythological"><forename>Omero</forename></persName>, ma neppure<lb n="26" /> 
+                            i suoi contradittori sono riusciti a provare il contrario, nè <lb n="27" /> 
+                            a dire qual città della <placeName type="region">Troade</placeName> fosse quella, se <placeName type="city">Troja</placeName> non <lb n="28" /> 
+                            era. <seg ana="sch">In ogni caso lo <persName role="author" type="real"><surname> Schliemann</surname></persName> è il solo che abbia potuto <lb n="29" />
+                            presentare ai dotti una congettura basata sulla esistenza <lb n="30" /> 
+                            di una città antica vera e propria e di antichità senza al<lb n="31" break="no"/>
+                            cun dubbio assai pre-omerica.</seg><lb n="32"/>
+                        </p>
+                        <p>
+                            Le incertezze però che tuttavia possono rimanere sul <lb n="33"/> 
+                            nome da darsi alla scoperta di <placeName type="other">Hissarlik</placeName>, non esistono af<lb n="34" break="no"/>fatto per questa di <placeName type="city">Micene</placeName>. Per <placeName type="city">Troja</placeName> non è mancato qual<lb n="35" break="no"/>che capo ameno che abbia fin negato che sia mai esistita <lb n="36"/> 
+                            e abbia anche tentato di farla sparire dall’albo dei nomi <lb n="37" /> 
+                            storici, coi soliti bussolotti della mitologia comparata, l’<persName type="fictional"><addName type="epithet">antico mostro vedico</addName> <forename>Vritra</forename></persName>,<lb n="38" break="no"/>
+                            e l’antica sua caverna, che è <lb n="39"/>
+                            ormai tutta piena di corbellerie moderne. Per <placeName type="city">Micene</placeName> que<lb n="40" break="no"/>ste fantasticherie non potevano aver luogo. Quantunque <lb n="41" />
+                            antichissima, questa città non fu distrutta che in tempi <lb n="42"/>
+                            storici, cioè nel <date notBefore="-0500" notAfter="-0401"> V secolo prima di Cristo</date>, e le sue rovine <lb n="43"/> 
+                            imponenti rimasero sopra terra fino ai nostri giorni. <lb n="44"/>
+                        </p>
+                        <p>
+                            L’antichità spesso rammenta quelle costruzioni antichis<lb n="45" break="no"/>sime, citandole come il più antico esempio di struttura <lb n="46" /> 
+                            così detta ciclopica. <persName role="author" type="real"><forename>Pausania</forename></persName> nel <date notBefore="0100" notAfter="0199">secondo secolo dell'era volgare</date><lb n="47"/>  
+                            descriveva le rovine di <placeName type="city">Micene</placeName> presso a poco quali <lb n="48" /> 
+                            ora puranco le vediamo. Le origini della città sono per <lb n="49" />
+                            gli antichi del tutto mitiche; le attribuiscono a <persName type="mythological"><forename>Perseo</forename></persName> e <lb n="50" />
+                            ai <rs type="group" subtype="mythological">Ciclopi</rs>. Il più grande splendore di <placeName type="city">Micene</placeName> appartiene <lb n="51" />
+                            all'<rs type="period" subtype="mythological">età eroica</rs>, a quella cioè per la quale mancano i monu<lb n="52" break="no"/>menti storici, e non si hanno che ricordi poetici nelle epo<lb n="53" break="no"/>pee. <persName type="mythological"><forename>Pelope</forename></persName> e <rs type="dynasty">Pelopidi</rs> venuti con ingenti ricchezze dalla <lb n="54" /> 
+                            <placeName type="region">Frigia</placeName> o dalla <placeName type="region">Lidia</placeName> si stabiliscono a <placeName type="city">Micene</placeName>, di là domi<lb n="55" break="no"/>nano sul <placeName type="region">Peloponneso</placeName> che ne porta tuttora il nome, ed <lb n="56" />
+                            hanno il primato fra tutti i principi greci per più genera<lb n="57" break="no"/>zioni, che ci offrono i nomi eroici e poetici di <persName type="mythological"><forename>Pelope</forename></persName>, <persName type="mythological"><forename>Atreo</forename></persName>, <persName type="mythological"><forename>Tieste</forename></persName>, <persName type="mythological"><forename>Agamennone</forename></persName>, <persName type="mythological"><forename>Menelao</forename></persName>, <persName type="mythological"><forename>Egisto</forename></persName>, <persName type="mythological"><forename>Clitennestra</forename></persName>, <persName type="mythological"><forename>Elena</forename></persName>, <lb n="58"/>
+                            <persName type="mythological"><forename>Oreste</forename></persName>. Così da <placeName type="city">Micene</placeName> prende le mosse la <eventName type="war">guerra trojana</eventName>,  <lb n="59" /> 
+                            e <placeName type="city">Micene</placeName> è la scena dei tragici avvenimenti che ispirano <lb n="60"/> 
+                            ad <persName role="author" type="real"><forename>Eschilo</forename></persName> l'<title level="m" rend="italic">Orestea</title>. Dopo <persName type="mythological"><forename>Oreste</forename></persName> troviamo il ritorno degli <lb n="61"/>
+                            <rs type="dynasty" subtype="mythological">Eraclidi</rs> nel <placeName type="region">Peloponneso</placeName>, i quali danno la prevalenza ad <lb n="62"/> 
+                            <placeName type="city">Argo</placeName>, la rivale di <placeName type="city">Micene</placeName>, e per questa incomincia allora <lb n="63"/>
+                            un’epoca di decadenza da cui non si risollevò più mai fin<lb n="64" break="no"/>chè, dopo essersi distinta colle illustri gesta dei suoi alle <lb n="65" />
+                            <placeName type="other">Termopili</placeName>, soccombette nel <date when="-0468">468 av. Cr.</date> sotto i colpi della <lb n="66"/> 
+                            gelosa <placeName type="city">Argo</placeName>. In mezzo alle favole poetiche, i fatti che pos<lb n="67" break="no"/>sono ritenersi come positivi sono questi: 1° L’esistenza <lb n="68"/> 
+                            fin dai tempi antichissimi di questa città di <placeName type="city">Micene</placeName> di cui <lb n="69"/> 
+                            possediamo le rovine; 2° L’aver essa accolto una stirpe di <lb n="70" />  
+                            dominanti venuti dall’<placeName type="continent">Asia minore</placeName> e che s’impose a tutto <lb n="71" /> 
+                            il <placeName type="region">Peloponneso</placeName> per più di una generazione; 3° L’opulenza <lb n="72"/>
+                            grandissima di quella città durante quel dominio; 4° Il <lb n="73"/>
+                            principio della sua decadenza colla migrazione dorica o il <lb n="74" />
+                            ritorno degli <rs type="dynasty" subtype="mythological">Eraclidi</rs>, che è da antichi e moderni consi<lb n="75" break="no"/>derato come un fatto storico, il quale ebbe luogo circa un<lb n="76" break="no"/>
+                            dici secoli prima dell’<date notBefore="0100" notAfter="0199">èra volgare</date>; 5° Finalmente la distru<lb n="77" break="no"/>
+                            zione di <placeName type="city">Micene</placeName> nel <date when="-0467">468 av. Cr.</date>. <seg ana="sch">Di tutto ciò bisogna tener <lb n="78" />
+                            conto per apprezzare l’altissimo valore della scoperta dello<lb n="79"/>
+                            <persName role="author" type="real"><surname>Schliemann</surname></persName>.</seg><lb n="80"/>
+                        </p>
+                        <p>
+                            La porta, così detta dei Leoni, di <placeName type="city">Micene</placeName>, era fin qui il <lb n="81"/> 
+                            più antico monumento di scultura che si conoscesse in <placeName type="continent">Eu<lb n="82" break="no"/>ropa</placeName>,
+                            monumento notevolissimo per lo stile affatto diverso<lb n="83"/>
+                            da quanto poi troviamo nella scultura greca e che trova <lb n="84"/>
+                            raffronti soltanto in <placeName type="continent">Asia</placeName>, singolarmente nella <placeName type="region">Frigia</placeName>. Quella <lb n="85"/>
+                            porta fa parte delle mura ciclopiche che circondano l'<placeName type="monument">Acro<lb n="86" break="no"/>poli</placeName>
+                            di <placeName type="city">Micene</placeName> ed apre l’adito a questa parte alta della <lb n="87"/>
+                            città ove trovavansi le case reali. <seg ana="sch">Appunto sull’<placeName type="monument">Acropoli</placeName> <lb n="88"/>
+                            ha trovato lo <persName role="author" type="real"><surname>Schliemann</surname></persName> cinque tombe, alle quali poi se<lb n="89" /> <pb n="3"/>
+                            ne aggiunse una sesta e testé anche una settima trovate <lb n="90"/>
+                            da altri.</seg> Non ci vogliamo troppo trattenere qui sull’idea <lb n="91"/>
+                            dello <persName role="author" type="real"><surname>Schliemann</surname></persName>, accettata dal <orgName type="publisher">Gladstone</orgName>, che queste siano <lb n="92"/> 
+                            le tombe di  <persName type="mythological"><forename>Agamennone</forename></persName>, <persName type="mythological"><forename>Cassandra</forename></persName> e altri eroi che l’antica tradi<lb n="93" break="no"/>zione, riferita da <persName role="author" type="real"><forename>Pausania</forename></persName> collocava in questi luoghi. La<lb n="94" break="no"/>
+                            sciando da parte altre considerazioni più elevate, è strano <lb n="95" /> 
+                            che lo <persName role="author" type="real"><surname>Schliemann</surname></persName> non abbia osservato quanto diverso sia <lb n="96"/>
+                            lo stile degli oggetti preziosi trovati in queste tombe da <lb n="97"/> 
+                            quello degli oggetti trovati a <placeName type="city">Troja</placeName>, e quanto incredibile <lb n="98"/>
+                            sarebbe che nella tomba di <persName type="mythological"><forename>Agamennone</forename></persName> fra le cose pre<lb n="99" break="no"/>
+                            ziose non si trovasse anche una parte del bottino riportato <lb n="100"/>
+                            da <placeName type="city">Troja</placeName>. Dal che seguirebbe che o in queste tombe non <lb n="101"/>
+                            c’è <persName type="mythological"><forename>Agamennone</forename></persName> o quella che lo <persName role="author" type="real"><surname>Schliemann</surname></persName> crede <placeName type="city">Troja</placeName> <lb n="102"/>
+                            non è <placeName type="city">Troja</placeName>. Ma a tutto ciò si può passar sopra, chè ve<lb n="103" break="no"/>
+                            ramente se non si fossero trovate che le ossa di alcuni eroi, <lb n="104"/>
+                            il guadagno non sarebbe grande. Questo convien dire che <lb n="105"/>
+                            sepolcri come questi pieni di sorprendenti ricchezze (chè <lb n="106"/>
+                            soltanto l’oro trovato oggi in cinque di essi raggiunge il<lb n="107"/>
+                            peso di 5000 lire sterline!) e situati non nélla città bassa<lb n="108"/>
+                            ma nell’<placeName type="monument">Acropoli</placeName>, non possono appartenere che a perso<lb n="109" break="no"/>naggi regali, <seg ana="sch">e certamente i quindici scheletri trovati dallo <lb n="110"/>
+                            <persName role="author" type="real"><surname>Schliemann</surname></persName>, quasi tutti letteralmente coperti d’oro, non<lb n="111"/>
+                            possono essere di gente oscura, ma è più che probabile <lb n="112"/>
+                            che se potessero parlare ci direbbero nomi non ignoti e <lb n="113"/>
+                            forse anche illustri nell’antica poesia.</seg> Come negare che <lb n="114"/>
+                            essi appartengono a quell’età in cui <placeName type="city">Micene</placeName> meritava an<lb n="115" break="no"/>cora i titoli che le dà <persName type="mythological"><forename >Omero</forename></persName>, <hi rend="italic">di città ben costrutta, dalle</hi><lb n="116"/>
+                            <hi>larghe strade, e soprattutto ricca d’oro <foreign xml:lang="grc">(polychrysos)</foreign>? </hi> Ora <lb n="117"/>
+                            se interroghiamo la tradizione antica, quest’epoca di ric<lb n="118" break="no"/> 
+                            chezza per <placeName type="city">Micene</placeName> risponderebbe al dominio dei <orgName type="dynasty">Pelopidi</orgName><lb n="119"/>
+                            In ogni caso poi, posteriore a quello non può essere, poi <lb n="120" break="no"/>
+                            ché dopo il ritorno degli <orgName type= "dynasty">Eraclidi</orgName> non esiste nella storia<lb n="121"/> 
+                            di <placeName type="city">Micene</placeName> decaduta, un momento in cui si potrebbe spie<lb n="122" break="no"/>
+                            gare l’esistenza di tombe regali quali queste sono certa <lb n="123"  break="no"/>
+                            mente. Qual sia poi il rapporto fra i <orgName type="dynasty">Pelopidi</orgName> della poesia <lb n="124"/> 
+                            e i <orgName type="dynasty">Pelopidi</orgName> della realtà, noi non possiamo determinare;<lb n="125"/> 
+                            ma certo è un fatto di grande importanza per un’epoca<lb n="126"/>
+                            <choice><sic>qual'è</sic> <corr>qual è</corr></choice> questa, di cui non abbiamo che la immagine poe<lb n="127" break="no"/>tica, <seg ana="sch">il trovare tanto di concreto e reale quanto lo <persName role="author" type="real"><surname>Schlie<lb n="128" break="no"/>mann</surname></persName>
+                            ebbe la fortuna di scoprire; chè se queste tombe non <lb n="129"/>  
+                            ci dicono nulla sulle persone o sugli avvenimenti, certo<lb n="130"/>
+                            esse ci dicono moltissimo sulle condizioni della civiltà e<lb n="131"/> 
+                            dell’arte in quei tempi, ed in questo consiste l’importanza<lb n="132"/>
+                            loro, allargandosi per esse la nostra visuale storica e dira <lb n="133"/>dandosi in modo del tutto inaspettato una parte almeno di <lb n="134"/> 
+                            quella nebbia che c’impediva di veder chiaro nelle origini <lb n="135"/> 
+                            e nelle più antiche fasi della nostra civiltà europea. </seg> <lb n="136"/>
+                        </p>
+                        <p>
+                            <seg ana="sch">Gli oggetti trovati nelle tombe non sono pochi: si con<lb n="137" break="no"/>tano a centinaia. È tutto un museo, nel quale si passa di sor<lb n="138"  break="no"/>presa in sorpresa dinanzi al numero, alla qualità, alla varietà<lb n="139"/> 
+                            degli oggetti. Notiamo dapprima le stele di marmo scolpite<lb n="140"/>
+                            a ornati e figure, importante aggiunta all’unico monumento<lb n="141" />
+                            prima conosciuto della scultura di quest’epoca remota, che<lb n="142" />
+                            era, come dicemmo, la <placeName type="monument">Porta dei Leoni</placeName>. E poi una quan<lb n="143" break="no"/>tità grande di oggetti, i più importanti dei quali troviamo <lb n="144"/>
+                            diligentemente rappresentati nelle 700 incisioni che ador<lb n="145" break="no"/>nano il libro dello <persName role="author" type="real"><surname>Schliemann</surname></persName>.</seg> In grandissima parte questi<lb n="146"/>
+                            oggetti sono d’oro più o meno finamente lavorato; altri<lb n="147"/>
+                            sono di argento puro, di una lega d’argento e piombo,<lb n="148"/> 
+                            d’argento dorato, di bronzo, di rame, di avorio, d’ambra,<lb n="149"/> 
+                            di cristallo di rocca, di alabastro, di osso, di pasta di ve<lb n="150" break="no"/>tro, di terracotta ec.; v’hanno anche gemme incise, di sar<lb n="151" break="no" />donica, di agata, di ametisto ec. I più sono vasi, armi, e<lb n="152"/> 
+                            ornamenti del vestiario o della persona dei sepolti, dei <lb n="153"/>
+                            quali le ossa pur si sono trovate. Soprattutto attirano l’at<lb n="154" break="no" />tenzione le maschere d’oro trovate sul volto di parecchi scheletri, i vasi d’oro e d’argento dei quali taluni presen <lb n="155" break="no" /><pb n="4"/>tano forme assai eleganti, i lavori di ornato in oro che <lb n="156"/>
+                            sorprendono per la grande varietà dei disegni, taluni dei <lb n="157"/>
+                            quali possono anch’oggi dirsi belli. E v’hanno pure lavori <lb n="158"/>
+                            di oreficeria più complicata, come la combinazione del cri<lb n="159" break="no"/>stallo di rocca coll’ oro: per esempio, un drago d’oro di <lb n="160"/>
+                            cui le squame sono di cristallo di rocca. Ma ciò che pre<lb n="161" break="no"/>senta il più alto interesse è soprattutto l’opera figurata di <lb n="162"/>
+                            cui è ricca questa scoperta a differenza del così detto tesoro <lb n="163"/>
+                            di <persName type="mythological"><forename>Priamo</forename></persName>, ove appena si trova un tentativo di rappresentare<lb n="164"/>
+                            la figura umana. Qui abbiamo una quantità considerevole<lb n="165"/>
+                            di oggetti figurati, nei quali ciò che a prima giunta col<lb n="166" break="no"/>pisce, è una grande ineguaglianza nella finezza del disegno.<lb n="167" />
+                            In taluni si stenta a riconoscere che cosa l’artista abbia <lb n="168"/>
+                            voluto rappresentare. Altri invece mostrano un’arte pro<lb n="169" break="no" />gredita quanto niuno lo aspetterebbe in un’epoca anteriore <lb n="170"/>
+                            di molto a tutti i monumenti figurati greci, anche i più <lb n="171"/>
+                            arcaici, fin qui conosciuti. Tale, per esempio, un leone d’oro,<lb n="172"/>
+                            tale una testa di bue d’argento dorato, tale soprattutto <lb n="173"/> 
+                            un anello d’ oro con una incisione assai complicata di una <lb n="174"/>
+                            scena ov’entrano parecchie figure; certo non è un’arte na<lb n="175" break="no" />scente quella che in piccolo spazio sa con sufficiente osser<lb n="176" break="no"/> 
+                            vanza delle proporzioni aggruppare figure in quella ma<lb n="177" break="no"/>niera, dar loro espressione e segnare non solo i contorni<lb n="178"/>
+                            ma ogni più minimo particolare della persona e del vestiario.<lb n="179"/>  
+                        </p>
+                        <p>
+                           Ad onta della disuguaglianza nella finitezza del lavoro è <lb n="180"/> 
+                           pur chiaro d’altro lato che c’è una unità di tipo nell’arte <lb n="181"/> 
+                           che qui è rappresentata, e che queste tombe appartengono ad <lb n="182"/>
+                           uno stesso periodo di arte e di civiltà, il quale però in <placeName type="country">Grecia</placeName> (come la<placeName type="monument">Porta dei Leoni</placeName>, con cui si accorda pienamente) sta <lb n="183"/>
+                           da sè, nè si può concepirlo in relazione di continuità con <lb n="184"/>
+                           quell’arte greca che si sviluppò parecchi secoli più tardi.<lb n="185"/>
+                           In una parola, qui abbiamo un’arte di provenienza non<lb n="186"/>
+                           greca, un’arte d’importazione che si riconosce, non soltanto<lb n="187" /> 
+                           nei piccoli oggetti che potrebbero essere stati portati, pel<lb n="188"/>
+                           commercio fenicio, da regioni diverse, ma anche negli og<lb n="189" break="no"/>getti evidentemente fabbricati sul luogo, come le stele, le<lb n="190"/> 
+                           maschere ec. E già vediamo gli archeologi mettersi al<lb n="191" break="no"/>l’opra; per uno o per un altro oggetto si fanno confronti<lb n="192"/>
+                           con oggetti trovati a <placeName type="island">Rodi</placeName>, a <placeName type="island">Cipro</placeName>, a <placeName type="city">Sparta</placeName>, a <placeName type="island">Santorino</placeName> <lb n="193"/> 
+                           ed altrove, ed anche, singolarmente nei periodici inglesi, <lb n="194"/> 
+                           si parla con insistenza di arte assira. Ma se una qualche <lb n="195"/>
+                           influenza dell’arte assira qui si può ravvisare, nel tutto <lb n="196"/>
+                           assieme noi vediamo i prodotti di un popolo che è bensì <lb n="197"/> 
+                           d’origine asiatica, ma non assira, e che ha un’arte sua <lb n="198"/>
+                           propria. Convien rammentare che <persName type="mythological"><forename>Omero</forename></persName> e i più antichi <lb n="199"/>
+                           miti greci, i quali pur ricordano rapporti dell’<placeName type="country">Egitto</placeName> e della <lb n="200"/> 
+                           <placeName type="region">Fenicia</placeName> colla <placeName type="country">Grecia</placeName>, ignorano affatto l’<placeName type="region">Assiria</placeName>. All’<placeName type="continent">Asia</placeName><lb n="201"/>
+                           minore, ai ricchi paesi della <placeName type="region">Frigia</placeName> e della <placeName type="region">Lidia</placeName>, fa ine<lb n="202" break="no" />vitabilmente pensare questa scoperta, accordandosi con quei<lb n="203" />
+                           ricordi poetici degli antichi che di là fanno venire una <lb n="204" />
+                           ricca stirpe nel <placeName type="region">Peloponneso</placeName>, avente principal sede in <placeName type="city">Mi<lb n="205" break="no"/>cene</placeName>. 
+                           Questo vien confermato non solo, dal tipo dell’arte, <lb n="206"/>
+                           ma anche dalle costumanze certamente asiatiche, a mio cre<lb n="207" break="no"/>dere, e non punto greche, che ci vengono rivelate da questi <lb n="208"/> 
+                           sepolcri. E qui si scorge anche un fatto notevolissimo, come <lb n="209"/> 
+                           cioè sia lontano assai il rapporto fra la poesia Omerica e <lb n="210"/> 
+                           la realtà. <persName role="author"><forename>Omero</forename></persName> dà uno stesso colorito a tutti i <orgName type="ethnic" subtype="Greek">Greci</orgName> ed <lb n="211"/>
+                           anche ai <orgName type="ethnic" subtype="Trojan">Troiani</orgName> lingua, vestiario, costumanze, credenze, <lb n="212"/> 
+                           armi ec. tutto è presso a poco identico. Della origine asia<lb n="213" break="no"/>tica degli <orgName type="dynasty">Atridi</orgName> non c’è alcun accenno, nè v’ha alcunché <lb n="214"/> 
+                           che distingua gli <orgName type="dynasty">Atridi</orgName> e le loro genti dagli altri <orgName type="dynasty">Achei</orgName>. <lb n="215"/>
+                           Ebbene: qui si potrebbe notare quanta differenza corre fra <lb n="126"/>
+                           gli oggetti qui trovati, e quelli trovati nella <placeName type="region">Troade</placeName> che <lb n="217"/>
+                           mostrano un grado di sviluppo civile o almeno artistico <lb n="218" />
+                           assai inferiore. Ma, per venire su di un terreno più sicuro, <lb n="219" />
+                           queste tombe ci dicono chiaro che i <orgName type="dynasty">Pelopidi</orgName>, o chiunque <lb n="220"/><pb n="5"/> 
+                           fossero i venuti nel <placeName type="region">Peloponneso</placeName> dall’<placeName type="continent">Asia Minore</placeName>, oltre alle <lb n="221"/> 
+                           ingenti ricchezze, ad una abbondanza d’oro ignota alla <placeName type="country">Grecia</placeName>europea, ad uno sfarzo insolito fra i Greci, porta<lb n="222" break="no"/> 
+                           rono anche e serbarono le loro arti e le loro usanze per <lb n="223"/>  
+                           modo che oggi nei loro sepolcri li vediamo assai diversi <lb n="224"/>
+                           dagli Achei d’<persName role="author"><forename>Omero</forename></persName>. A me par chiaro che essi sul capo <lb n="225"/> 
+                           portassero mitre o tiare, alle quali appartengono quegli <lb n="226" /> 
+                           ornamenti d’oro che <persName role="author" type="real"><surname>Schliemann</surname></persName> chiama diademi, altrimenti <lb n="227"/> 
+                           non s’intenderebbe come su di una sola testa ci fosse posto <lb n="228" /> 
+                           per cinque diademi. E del resto anche nelle figure rappre <lb n="229" break="no"/>sentate sugli oggetti trovati, vediamo il capo coperto da <lb n="230" />
+                           singolari berretti alti, con visiera, o da mitre, in modo af<lb n="231" break="no"/>fatto straniero ai Greci. Anche ignoto affatto ad <persName role="author"><forename>Omero</forename></persName> e<lb n="232"/> 
+                           ai Greci è l’uso di coprire il volto dei defunti con maschere <lb n="233" /> 
+                           d’oro. Del vestiario dei sepolti non rimanendo che gli ele<lb n="234" break="no"/>menti metallici, mal possiamo determinarne le parti e le for<lb n="235" break="no"/>me: ma anche qui gli oggetti figurati ci mostrano un modo di <lb n="236"/> 
+                           vestire interamente estraneo ai Greci, schiettamente asia<lb n="237" break="no"/>tico, sovraccarico di ornamenti. Che con ciò si accordasse <lb n="238" />
+                           il vestiario dei sepolti lo mostrano le infinite foglioline <lb n="239"/>
+                           d’oro e i dischetti d’oro lavorato a ornati che a centinaia <lb n="240"/>
+                           si sono trovati sopra e sotto questi scheletri insieme con <lb n="241" />
+                           altri oggetti d’oro che certamente erano auch’essi guarni<lb n="242" break="no"/>zioni di vesti.<lb n="243"/>
+                        </p>
+                        <p>
+                          Con tutti gli scheletri di uomini (una sola tomba, son<lb n="244" break="no"/>tuosissima, contiene tre scheletri di donne) si sono trovate<lb n="245"/>
+                          moltissime armi di offesa; le armi di difesa forse c’erano<lb n="246" />
+                          ma non metalliche e quindi scomparvero; i molti denti di<lb n="247"/>
+                          cinghiale che si sono trovati potevano essere ornamenti di<lb n="248"/>
+                          scudi o di elmetti o di barbute di cuoio: come troviamo an<lb n="249" break="no"/>che in <persName role="author"><forename>Omero</forename></persName>: ma in tanta ricchezza di sepolti sorprende <lb n="250"/>
+                          il non trovare elmi, corazze, scudi e gambiere di metallo,<lb n="251"/>
+                          che pur chiunque abbia letto <persName role="author" type="mythological">Omero</persName> sa bene quanto valore <lb n="252"/>
+                          abbiano fra gli Achei i vestiti di bronzo. Corazza non può chia<lb n="253" break="no"/>marsi la larga lamina d’oro trovata sul petto di due sche<lb n="254" break="no"/>letri. Soprattutto fa impressione l’assoluta assenza del prin<lb n="255" break="no"/>
+                          cipal distintivo omerico degli Achei, le  <seg rend="italic">belle gambiere di bronzo</seg>.<lb n="256"/>
+                          Questi sepolti avevano evidentemente le gambe coperte da<lb n="257"/>
+                          un tessuto di stoffa, alla maniera Frigia, che andava assai <lb n="258" />
+                          al disopra del ginocchio ed era tenuto fermo da un anello <lb n="259"/>
+                          d’oro che si è trovato in più d’uno scheletro. Le armi<lb n="260" />
+                          d’offesa poi sono quasi tutte di bronzo, ma si son trovate <lb n="261"/> 
+                          pure assai punte di treccie di pietra e qualche coltello pure <lb n="262"/> 
+                          di pietra, cose affatto ignote ad <persName role="author" type="mythological">Omero</persName>. D’altro lato fra i<lb n="263"/>
+                          vari metalli trovati in queste tombe manca affatto il ferro,<lb n="264"/> 
+                          che pure <persName type="mythological" role="author">Omero</persName> conosce.<lb n="265"/>
+                        </p>  
+                        <p>
+                          Notevolissimo poi e molto caratteristico è il modo di <lb n="262"/>
+                          dar sepoltura, ben diverso dagli usi eroici descritti da <lb n="263"/> 
+                          <persName type="mythological" role="author">Omero</persName> e dagli usi Greci in generale. In <persName type="mythological" role="author">Omero</persName> la cosa è <lb n="264"/> 
+                          semplicissima; <persName type="mythological">Patroclo</persName>, <persName type="mythological">Ettore</persName> sono posti nudi sulla pira, <lb n="265"/> 
+                          bruciati, e poi raccolte le ossa son chiuse in un’urna. Per <lb n="266"/>
+                          una eccezione, il padre di <persName type="mythological">Andromaca</persName> è bruciato colle armi <lb n="267"/>
+                          indosso. Qui invece vediamo che si comincia dal costruire <lb n="268"/>
+                          una tomba quadrata con forti pareti di materiale, capace <lb n="271"/>
+                          di più cadaveri. Si pone uno strato di ghiaia nel fondo, su questo il cadavere riccamente vestito; poi sul cadavere le <lb n="272"/> 
+                          legna, poi sulle legna uno strato di argilla e finalmente su <lb n="273"/> 
+                          questo un altro strato di ghiaia. Dopo avvenuta la cre<lb n="274" break="no"/>mazione si copre il tutto di terra. Si vede bene che così <lb n="275"/>
+                          si è voluto ottenere piuttostochè un incenerimento del ca<lb n="276" break="no"/>davere, un disseccamento o una carbonizzazione più o meno <lb n="277"/>
+                          inoltrata e questa è forse la cagione per cui quelli sche<lb n="278" break="no"/>letri hanno potuto traversare tanti secoli.<lb n="279"/>
+                        </p>
+                        <p>
+                          Così ognun vede che i poemi omerici <w type="archaic">appariscono</w> assai<lb n="279" />
+                          lontani dai tempi della prosperità di <placeName type="city">Micene</placeName>, e danno dei <lb n="280"/>
+                          signori di questa città un’idea che molto si discosta dal <lb n="281"/>
+                          vero. Ciò deve servire di avvertimento a quei dotti che <lb n="282" /><pb n="6"/>
+                          con <persName type="mythological" role="author">Omero</persName> alla mano credono poter determinare dov’era o <lb n="283"/>
+                          dove non era <placeName type="city">Troja</placeName>.<lb n="284"/>
+                        </p>
+                        <p>
+                          Di scrittura non s’è trovata traccia in queste tombe:<lb n="285"/>
+                          però è difficile credere che fosse ignota quando l’arte tanto<lb n="286" />
+                          sapeva fare in ornato e in figura. Ma le molte osservazioni<lb n="287"/>
+                          che vorrei aggiungere a quelle che ho già esposte non mi<lb n="288"/>
+                          sono consentite dalla natura e dalle proporzioni di questo<lb n="289"/>
+                          periodico. <seg ana="sch"> Basti quanto ho detto a provare l’alta impor-<lb n="290"/>
+                          tanza di questa scoperta che apre un nuovo orizzonte alle <lb n="291"/>
+                          indagini sui primordi dell’arte e della civiltà europea.<lb n="292"/>
+                          Il suolo della <placeName type="country">Grecia</placeName> e l'<placeName type="continent">Asia minore</placeName> è appena stato sfio<lb n="293" break="no"/>rato dagli archeologi; esso cela nel suo seno la soluzione<lb n="294"/>
+                          di molti e gravi problemi storici, e la darà se il nobile ar<lb n="295" break="no"/>dore del signor Schliemann troverà imitatori.</seg><lb n="296"/>  
+                        </p> 
+                            <closer>
+                                <signed>
+                                    <persName role="author" type="real">
+                                        <forename><abbr>D.</abbr> <expan>Domenico</expan></forename> <surname>Comparetti</surname>
+                                    </persName>
+                                </signed>
+                            </closer>
+    
+                           
+                       
+      
+            </div>
+            <!-- Secondo testo: M. DE GUSMAN: il racconto di un teschio, ed altre novelle.-->
+             <div n="2" type="textArticle" xml:id="Gusman">
+                <pb facs="screenpagine/gusman1.jpg"/>
+                <head xml:id="MG">
+                    <persName role="author" type="real">
+                        <abbr>M.</abbr>
+                        <surname>DE GUSMAN</surname>
+                    </persName>: 
+                    il racconto di un teschio, ed altre novelle.
+                </head>
+                <lb n="1"/>
+                <p>
+                    Sono sei novellette; ma le due prime ne fanno una sola. <lb n="2"/> 
+                    Appartengono al genere fantastico; ed arieggiano al <persName role="author" type="real"><surname>Poe</surname></persName>: <lb n="3"/>
+                    genere di moda. <seg ana="grottesco">Le due prime e l'ultima si <w type="archaic">rassomigliano</w> <lb n="4"/>
+                    e sono le peggiori. Nessuna originalità malgrado la bizzar<lb n="5" break="no"/>ria </seg> di quel <hi rend="italic">suicida</hi> che viene d'oltre tomba per raccontare <lb n="6"/>
+                    le sue sventure matrimoniali al signor <persName type="fictional"><forename ><hi rend="italic">Micheal</hi></forename></persName>; e l'amenità <lb n="7"/>
+                    di quel teschio ridotto a far da lampada che gli confessa <lb n="8"/>
+                    i suoi peccati amorosi. <seg ana="grottesco"> Abbondanza di stranezze e e d'idee <lb n="9"/>
+                    comuni.</seg> Fin dalle prime pagine, per esempio, l'autore ci fa <lb n="10"/>
+                    sapere che molte belle donne lo hanno visitato nella sua <lb n="11"/>
+                    cameretta. Si sa, non c'è giovane autore che si rispetti, il <lb n="12"/>
+                    quale si creda lecito di deufradare le sue lettrici di notizie <lb n="13"/>
+                    così peregrine; nonostante oseremmo credere alla nostra <lb n="14"/>
+                    volta, che la cosa sia oramai abbastanza sfruttata e meriti <lb n="15"/>
+                    di essere messa tra i ferri vecchi. Anche quel povero <persName type="fictional"><forename ><hi rend="italic">Faust</hi></forename></persName> <lb n="16"/>
+                    e quell'infelice <persName type="fictional"><forename ><hi rend="italic">Mefistofele</hi></forename></persName> o <persName type="fictional"><forename ><hi rend="italic">Satana</hi></forename></persName> che sia, fanno da troppi <lb n="17"/>
+                    anni le spese alle fantasie di certi novellisti: sarebbe carità <lb n="18"/>
+                    di lasciarli dormire o bruciare in pace.<lb n="19"/>
+                </p>
+                <note>
+                    <bibl>
+                        <pubPlace>
+                            <placeName type="city">Napoli</placeName>,
+                        </pubPlace>
+                        <author>
+                            <persName>
+                                <forename>Riccardo</forename> <surname>Marghieri</surname>,
+                            </persName>
+                        </author>
+                        <date when="1878">1878</date>
+                    </bibl>
+                </note>    
+                <p>
+                    Del resto, il signor <persName role="author" type="real"><surname>De Gusman</surname></persName> incline verso la mora<lb n="20" break="no"/>
+                    lità: in queste tre novelle, è evidente che vuol mostrarci <lb n="21"/>
+                    le terribili conseguenze degli amori proibiti: ma viceversa <lb n="22"/> <pb n="2"/>
+                    è ben raro che il suo pensiero si sollevi oltre l'amore sen<lb n="23" break="no"/>suale. <lb n="24"/>
+                </p>
+                <pb facs="screenpagine/gusman2.jpg"/>
+                <p>
+                    Le meno peggiori tra le novellette sono: il <title level="a" rend="italic">Parricida</title>, <title level="a" rend="italic">Sa<lb n="25" break="no"/>tana vince</title>, e <title level="a" rend="italic">Selica</title>. <lb n="26"/>
+                </p>
+                <p>
+                    Nel<title level="a" rend="italic">Parricida</title>, un buon operaio, felice nella sua fami<lb n="27" break="no"/>gliuola, è tratto da un compagno malevolo a dubitare in<lb n="28" break="no"/>giustamente della propria moglie, e, credendo di ucciderne <lb n="29"/>
+                    l'amante uccide un altro. Vien condannato a 20 anni di la<lb n="30" break="no"/>vori forzati. Allorchè, scontata la pena, egli chiede della <lb n="31"/>
+                    sua famiglia, gli dicono che la moglie è morte e la figliuola <lb n="32"/>
+                    andata a <placeName type="city">Parigi</placeName>. A <placeName type="city">Parigi</placeName> non riesce a trovarla; non ha di <lb n="33"/>
+                    che vivere; nessuno gli dà lavoro, e, una sera va per but<lb n="34" break="no"/>ttarsi nella <placeName type="river">Senna</placeName>. Un suo compagno di <seg type="metonymy">catena</seg>, fuggito dal <lb n="35"/>
+                    bagno, lo ferma, e riconosciutolo gli fa coraggio, e gli propone un affare. <q type="thought">-Avrò denaro e troverò mia figlia!-</q> <lb n="36"/>
+                    Questo pensiero attraversa la sua mente <seg type="similarity">come un baleno</seg>. <lb n="37"/>
+                    Accetta. E un'ora dopo egli si trova nella camera di una <lb n="38"/>
+                    donna che grida <q>-al ladro-</q> Egli la strozza, e poi nella <lb n="39"/>
+                    morta riconosce sua figlia. Questa volta l'infelice non è <lb n="40"/>
+                    tratto al carcere, ma al manicomio. <lb n="41"/>
+                </p>
+                <p>
+                    La fatalità è la dea ispiratrice del sigonr <persName role="author" type="real"><surname>Gusman</surname></persName>. <lb n="42"/>
+                    <title level="a" rend="italic">Satana vince</title> è una leggenda  medioevale delle solite: <lb n="43"/>
+                    <persName type="fictional">Satana</persName> ha comprato un'anima di crociato servendosi del<lb n="44" break="no"/>l'amore e della gelosia -sempre l'amore e la gelosia!- <lb n="45"/>
+                    e se la porta con sè all'<placeName type="other">inferno</placeName>. <title level="a"><hi rend="italic">Selika</hi></title> è, come lo dice il <lb n="46"/>
+                    nome, una novella orientale. Questi due lavorini sono me<lb n="47" break="no"/>glio trattati dagli altri, <seg ana="grottesco">o al colorito, che l'autore <lb n="47"/>
+                    trascura sempre troppo, o rende troppo crudo. Del resto <lb n="48"/>
+                    siamo sempre lì. Si vuole evitare il convenzionalismo, e si <lb n="49"/>
+                    cade in un convenzionalismo di altro genere. </seg> <lb n="50"/>
+                </p>
+             </div>
+             <!--Terzo testo-->
+             <div n="2" type="textArticle" xml:id="Conservatorii">
+                <pb facs="screenpagine/conservatori1.jpg"/>
+                <pb n="3"/>
+                <head xml:id="IC" rend="caps">I 
+                    <w ana="arcaismo">CONSERVATORII</w> DI MUSICA IN
+                    <placeName type="country">ITALIA</placeName>
+                </head>
+                <lb n="1"/>
+                <p>
+                    I <w ana="arcaismo">Conservatorii</w> italiani, come tutti sanno, scendono di<lb n="2" break="no"/>rettamente dalla <orgName type="religious">Chiesa</orgName>; dalla <date notBefore="1340" notAfter="1500">metà del 1300 fino al 1500</date><lb n="3"/>
+                    ogni monastero era un centro di studi musicali. <w type="archaic">Da'</w> mona<lb n="4" break="no"/>steri vennero i <w ana="arcaismo">Conservatorii</w> (o più propriamente allora or<lb n="5" break="no"/>
+                    fanatrofi) alcuni dei quali esistevano fin dal <date notBefore="1500">secolo XVI</date> ed <lb n="6"/>
+                    erano destinati a formare <w type="archaic">de'</w> ragazzi cantori <foreign xml:lang="fr" rend="italic">enfants de<lb n="7" break="no"/>
+                    choeur</foreign>; si occupavano però necessariamente anche dello<lb n="8"/>
+                    studio tecnico degli strumenti. Il primo Conservatorio, quello<lb n="9"/>
+                    di musica di <orgName>Santa Maria di Loreto</orgName>, fu fondato in <placeName type="city">Napoli</placeName><lb n="10"/>
+                    nel <date when="1537">1537</date>: e i <w ana="arcaismo">Conservatorii</w> di <placeName type="city">Napoli</placeName> e di <placeName type="city">Venezia</placeName> ebbero<lb n="11"/>
+                    una grande influenza sulla fondazione e sui progressi della<lb n="12"/>
+                    nostra scuola del <date when="XIX secolo">secolo passato</date>. I nostri <w ana="arcaismo">Conservatorii</w> ser<lb n="13" break="no"/>virono di modello a tutti gli altri d'<placeName type="continent">Europa</placeName>, compreso quello<lb n="14"/>
+                    di <placeName type="city">Parigi</placeName>, illustrato dal nostro <persName role="author" type="real"><surname>Cherubini</surname></persName> e che, fondato<lb n="15"/>
+                    nel <date when="1784">1784</date>, è ora considerato come un tipo di eccellenza. I no<lb n="16" break="no"/>stri <w ana="arcaismo">Conservatorii</w> passarono poi dalla <orgName type="religion">Chiesa</orgName> allo <orgName type="public">Stato</orgName>, <lb n="17"/>
+                    <seg ana="#conservatori">ma questo, <choice><orig>pur troppo</orig><reg>purtroppo</reg></choice>, se ne è finora occupato assai poco</seg>.<lb n="18"/>
+                </p>
+                <p>
+                    <seg ana="conservatori">È innagabile che se tali Istituti hanno dato di recente<lb n="19"/>
+                    e danno oggi buoni risultati parziali, i risultati gene<lb n="20" break="no"/>rali potrebbero essere molto migliori</seg>: e la bontà loro<lb n="21"/>
+                    consiste appunto <w type="archaic">ne'</w> risultati generali; affinchè non accada<lb n="22"/>
+                    che il prestigio di cui gode il nome di un Conservatorio,<lb n="23"/>
+                    valga a sancire l'errore e a circondare d'un'aureola la me<lb n="24"/>
+                    diocrità.<lb n="25"/>
+                </p>
+                <p>
+                    I <w ana="arcaismo">Conservatorii</w> non sono tenuti a far germogliare i geni, <lb n="26"/>
+                    ben disse il <persName role="author" type="real"><surname>Filippi</surname></persName>, ma debbono formare ottimi musicisti;<lb n="27"/>
+                    e siccome hanno diritto e dovere di scelta nell'ammettere<lb n="28"/>
+                    gli alunni, così quelli che sanno poco o punto (anche dopo<lb n="29"/>
+                    aver frequentato l'Istituto) dovrebbero essere espulsi come<lb n="30"/>
+                    inetti o almeno non ottenere la licenza: nè da alcuni <w ana="arcaismo">Conser<lb n="31" break="no"/>vatorii</w> 
+                    dovrebbero uscire <w type="archaic">de'</w> giovani che non conoscono le<lb n="32"/>
+                    principali composizioni classiche italiane e straniere. Del<lb n="33"/>
+                    bene se n'è già cominciato a fare, ed <w type="archaic">anco</w> fra quelle mura<lb n="34"/>
+                    è penetrata e circola quell'aura innovatrice che può puri<lb n="35" break="no"/><pb n="1"/>
+                    ficare e risanare ciò che v'ha di guasto; ma bisogna saperne<lb n="36"/>
+                    trar profitto, perchè se non poco s'è fatto, molto resta<lb n="37"/>
+                    a fare.<lb n="38"/>
+                </p>
+                <pb facs="screenpagine/conservatori2.jpg"/>
+                <p>
+                    Veniamo <w type="archaic">a'</w> particolari.<lb n="39"/>
+                </p>
+                <p>
+                    <seg ana="conservatori">L'insegnamento che trovasi oggi in vergognosa deca<lb n="40" break="no"/>
+                    denza è quello del canto: e ciò accade in <placeName type="country">Italia</placeName>, che avrebbe<lb n="41"/>
+                    tante gloriose tradizioni da mantenere! <choice><orig>Anzi tutto</orig><reg>Anzitutto</reg></choice> sarebbe<lb n="42"/>
+                    necessaria, qui più che mai, una sagace severità nell'am<lb n="43" break="no"/>missione degli alunni, escludendo inesorabilmente quelli che<lb n="44"/>
+                    non hanno voci ed attitudini tali da promettere un'ottima<lb n="45"/>
+                    riuscita. Poi ci vorrebbero professori di provata <w type="archaic">valentia</w><lb n="46"/>
+                    che rimettessero in voga lo studio <w type="archaic">de'</w> nostri classici (<persName role="author" type="real"><surname>Scar<lb n="47" break="no"/>latti</surname></persName>,
+                    <persName role="author" type="real"><surname>Leo</surname></persName>, <persName role="author" type="real"><surname>Porpora</surname></persName>, <persName role="author" type="real"><surname>Durante</surname></persName>, <persName role="author" type="real"><surname>Marcello</surname></persName> ec.) e che indicassero<lb n="48"/>
+                    il modo di interpretare quella musica, rinfrescandone la tra<lb n="49" break="no"/>dizione, che sembra affatto perduta.</seg> Con quella musica biso<lb n="50" break="no"/>gna cantare per forza, bisogna aver la voce ferma e bene<lb n="51"/>
+                    <hi rend="italic">impostata</hi>, bisogna saperla emettere, saper tenere il fiato.<lb n="52"/>
+                    Così probabilmente si giungerebbe ad avere dei cantanti<lb n="53"/>
+                    invece di quell'esercito di urlatori a ogni costo, tremolanti<lb n="54"/>
+                    e sfiatati poi anzi tempo, che sono gli interpreti drammatici<lb n="55"/>
+                    <w type="archaic">d'oggidì</w>. <seg ana="conservatori">Ma finchè mancheranno i maestri capaci e i sani<lb n="56"/>
+                    intendimenti artistici, si andrà di male in peggio. Non sap<lb n="57" break="no"/>piamo perchè, vedendo che i professori fanno cattiva prova,<lb n="58"/>
+                    non si tenti di affidare tale insegnamento a qualche valente<lb n="59"/>
+                    maestra: sarebbe un tentativo possibile.</seg> All'estero le si<lb n="60" break="no"/>gnore <persName role="musician" type="real"><surname>Viardot</surname></persName> e <persName role="musician" type="real"><surname>Marchesi</surname></persName> diedero eccellenti risultati.<lb n="61"/>
+                </p>
+                <p>
+                    <seg ana="conservatori">Anche l'istruzione del canto corale non è intesa come<lb n="62"/>
+                    dovrebbe essere, e non vi si annette la grande importanza<lb n="63"/>
+                    che ha. E qui pure ci vorrebbe un artista provetto che<lb n="64"/>
+                    educasse gli scolari ad eseguir degnamente la musica dei<lb n="65"/>
+                    classici nostrali e forestieri. Il vantaggio saarebbe immenso<lb n="66"/>
+                    per tutti i discepoli, e segnatamente per quelli che studiano<lb n="67"/>
+                    la composizione;</seg> si educherebbero così ai potenti effetti<lb n="68"/>
+                    dell'armonia vocale, alla varia poesia, alla maestosa sem<lb n="69" break="no"/>plicità <w type="archaic">ch'entro</w> vi spira, e infine all'ottima disposizione<lb n="70"/>
+                    delle voci. Ed è qui che ci gioverebbe particolarmente lo<lb n="71"/>
+                    studio degli istituti appositi in <placeName type="country">Germania</placeName>.<lb n="72"/>
+                </p>
+                <p>
+                    <seg ana="conservatori">Per simili ragioni sarebbe indispensabile anche una vera<lb n="73"/>
+                    scuola di quartetto largamente concepita.</seg> <w type="archaic">Ne'</w><w ana="arcaismo">conservatorii</w><lb n="74"/>
+                    si suonano qualche volta <w type="archaic">de'</w> quartetti; ma <seg ana="conservatori">non è raro il<lb n="75"/>caso che ne escano parecchi alunni senza averne mai ese<lb n="76" break="no"/>guiti. Questa scuola dovrebbe conprendere collettive eser<lb n="77" break="no"/>
+                    citazioni di trii, quartetti, quintetti, settimini, ec. e sarebbe<lb n="78"/>
+                    un tale insegnamento <w type="archaic">anco</w> più importante dell'istruzione<lb n="79"/>
+                    orchestrale, perchè questa è, quasi direi, compresa in quello.<lb n="80"/>
+                    L'esecuzione <w type="archaic">de'</w> capolavori strumentali di <persName role="author" type="real"><forename>Boccherini</forename></persName>, <persName role="author" type="real"><surname>Che<lb n="81" break="no"/>rubini</surname></persName>,
+                    <persName role="author" type="real"><surname>Mozart</surname></persName>, <persName role="author" type="real"><surname>Haydn</surname></persName>, <persName role="author" type="real"><surname>Beethoven</surname></persName>, ec. sarebbe degno e ne<lb n="82" break="no"/>cessario complemento delle esercitazioni corali, e potendo<lb n="83"/>
+                    aggiungervi le orchestrali sinfoniche, si verrebbero a dare<lb n="84"/>
+                    altrettante lezioni pratiche e sommamente utili non solo<lb n="85"/>
+                    agli esecutori, ma a tutti gli altri alunni.</seg><lb n="86"/> 
+                </p>
+                <p>
+                    Perciò le scuole strumentali fanno assai miglior prova<lb n="87"/>
+                    nell'istruzione speciale d'ogni singolo strumento, che non<lb n="88"/>
+                    nelle esercitazioni collettive: onde, <seg ana="conservatori">allorchè gli alunni sono<lb n="89"/>
+                    alle prese colla musica classica seria, il primo loro difetto<lb n="90"/>
+                    nell'interpretazione è lo <hi rend="italic">stile</hi>, qualità principalissima.</seg><lb n="91"/>
+                </p>
+                <p>
+                    La scuola del pianoforte da qualche anno è <choice><orig>di molto</orig><reg>dimolto</reg></choice> mi<lb n="92" break="no"/>gliorata, mercè l'impulso gagliardo che le ha dato qualche<lb n="93"/>
+                    coraggioso e valentissimo professore. La soppressione della<lb n="94"/>
+                    fantasia o <foreign rend="italic">pot-pourri</foreign> sopra motivi d'opera (che ebbe voga<lb n="95"/>
+                    negli ultimi tempi di decadenza), l'introduzione delle ardite<lb n="96"/>
+                    e sapienti innovazioni del meccanismo e nella diteggiatura,<lb n="97"/>
+                    inaugurate da <persName role="author" type="real"><surname>Liszt</surname></persName> e propagate in ispecie dal <persName role="author" type="real"><surname>Tausig</surname></persName> e<lb n="98"/>
+                    dal <persName role="author"><surname>Bülow</surname></persName>, la poetica e <hi rend="italic">meditata</hi> interpretazione <w type="archaic">de'</w> classici,<lb n="99"/>
+                    moltiplicheranno gli ottimi saggi che se ne ebbero finora.<lb n="100"/>
+                    Ma bisogna che il buon esempio sia maggiormente imitato.<lb n="101"/>
+                </p>
+                <p>
+                    <seg ana="coservatori">L'insegnamento dell'organo è sceso così basso che più<lb n="102"/><pb n="2"/>
+                    giù non può andare</seg>: basta sentire qual sia la musica che,<lb n="103"/>
+                    nelle chiese d'<placeName type="country">Italia</placeName>, si suona dalla maggior parte degli<lb n="104"/>
+                    organisti. -<w type="archaic">Anco</w> <w type="archaic">ne'</w> <w ana="arcaismo">Conservatorii</w> non sono rose quelle che<lb n="105"/>
+                    fioriscono. Quanti professori sanno eseguire o sanno inse<lb n="106" break="no"/>gnare l'esecuzione o l'interpretazione delle <w type="archaic">maravigliose</w><lb n="107"/>
+                    opere di <persName role="author" type="real"><surname>Bach</surname></persName>? È molto se di <persName role="author"><surname>Bach</surname></persName>, il più grande orga<lb n="108" break="no"/>nista d'ogni tempo, si <w type="archaic">eseguisce</w> sull'organo di qualche no<lb n="109" break="no"/>
+                    stro Conservatorio una fuga del <foreign><title level="m" rend="italic">Clavecin bien tempere!</title></foreign><lb n="110"/>
+                </p>
+                <p>
+                    <seg ana="conservatori">Le scuole di composizione hanno dato ottimi risultati<lb n="111"/>
+                    parziali, e li darebbero generali se tutti gl’insegnanti se<lb n="112" break="no"/>guissero le savie norme e i salutari intendimenti dei<lb n="113"/>
+                    pochi egregi.</seg> Dice il <persName type="real"><surname>Gevaert</surname></persName>(direttore del Conservatorio<lb n="114"/>
+                    di <placeName type="city">Bruxelles</placeName>) che è <w type="archaic">d'uopo</w> insegnare <w type="archaic">a'</w> discepoli non <hi rend="italic">ciò<lb n="115"/>
+                    che bisogna sapere, ma ciò che bisogna saper fare;</hi> ed ha ra<lb n="116"/>
+                    gione, perchè il saper fare include necessariamente il sa<lb n="117"/>
+                    pere. L’insegnamento teorico deve procedere di pari passo<lb n="118"/>
+                    coll’insegnamento pratico, anzi uno deve compenetrarsi<lb n="119"/>
+                    nell’altro: chè la teoria nacque sempre posteriormente e<lb n="120"/>
+                    conseguentemente alla pratica, ed è cattiva ogni teoria che<lb n="121"/>
+                    non trovi una pratica applicazione.<lb n="122"/>
+                </p>
+                <p>
+                    Ma qui fa capolino un altro inconveniente. <seg ana="conservatori">Non si sa<lb n="123"/>
+                    perchè in parecchi <w type="archaic">de'</w> nostri <w ana="arcaismo">conservatorii</w> si vedono pro<lb n="124" break="no"/>fessori più che mediocri (e non sono i meno) accanto a<lb n="125"/>
+                    qualche professore insigne.</seg> I mediocri non sanno che sia<lb n="126"/>
+                    l'amor dell'arte e (come disse il maestro <persName role="author" type="real"><surname>Ruta</surname></persName> in un<lb n="127"/>
+                    suo bel libro sul Conservatorio di <placeName type="city">Napoli</placeName>) si potrebbero<lb n="128"/>
+                    chiamare <q>"non già insegnanti, ma mercatanti d’insegna<lb n="129"/>
+                    menti;"</q> chiacchierano molto in nome dell’arte, ma sono i<lb n="130"/>
+                    primi ad offenderla <w type="archaic">co'</w> fatti; osteggiano, con una guerra<lb n="131"/>
+                    sorda i più valenti; seminano la zizzania : ed ecco <w type="archaic">donde</w><lb n="132"/>
+                    nascono la camorra e la fiaccona. I pochi egregi fanno<lb n="133"/>quello che possono, ma sono sforzi isolati : <seg ana="conservatori">di qui i risul<lb n="134" break="no"/>
+                    tati parziali, non generali. Sarebbe, per esempio, necessario<lb n="135"/>
+                    che alle cattedre d’armonia elementare si desse tanta im<lb n="136" break="no"/>portanza quanta se ne dà a quelle di contrappunto e di<lb n="137"/>
+                    composizione : trattandosi de’ fondamenti di un grande edi<lb n="138" break="no"/>ficio, bisogna che siano solidi e chi li pone <w type="archaic">dea</w> risponderne.<lb n="139"/>
+                    Ma invece avviene non di rado che quando un alunno passa<lb n="140"/>
+                    alla scuola di contrappunto e di composizione sotto altro<lb n="141"/>
+                    professore, tocca a quest’ultimo di rifarsi da capo, e di dover<lb n="142"/>
+                    demolire per poi riedificare : tante sono le storture che gli<lb n="143"/>
+                    tocca raddirizzare. Lo stesso dicasi per tutti gli altri in<lb n="144" break="no"/>segnamenti.</seg><lb n="145"/>
+                </p>
+                <p>
+                    Ed ora un altro guaio.<lb n="146"/>
+                </p>
+                <p>
+                    Noi crediamo che la cultura intellettuale in genere, e la<lb n="147"/>
+                    letteraria in ispecie, abbiano <seg type="archaic">al dì d’oggi</seg> un’influenza molto<lb n="148"/>
+                    maggiore di quanto si crede sulla riuscita di un musicista,<lb n="149"/>
+                    Scrive il <persName role="author" type="real"><surname>Lenz</surname></persName> (nel suo libro: <foreign><title level="m" rend="italic">Beethoven et ses trois styles</title></foreign>)<lb n="150"/>
+                    che <q>"a sola diga da opporre a tante profanazioni sarebbe<lb n="151"/>
+                    una cultura più grande, più generale dello spirito degli<lb n="152"/>
+                    artisti, la quale dovrebbe occupar loro tanto tempo quanto<lb n="153"/>
+                    ne impiegano ad apprendere il meccanismo d’uno stru<lb n="154" break="no"/>mento;"</q> e narra come <persName role="author" type="real"><surname>Chopin</surname></persName>, quando aveva un discepolo<lb n="155"/>
+                    che gli stesse a cuore, soleva chiedergli che libri leggesse.<lb n="156"/>
+                    <seg ana="conservatori">Eppure l'istruzione letteraria <w type="archaic">ne'</w> musicisti è troppo spesso<lb n="157"/>
+                    manchevole.</seg> È vero che da quanto ne scrisse il <persName role="author" type="real"><surname>Gevaert</surname></persName><lb n="158"/>
+                    (nel suo <title level="m">Discours prononcé à la séance publique de la<lb n="159"/>
+                    classe de Beaux-Arts de l'Académie royale</title>) sembra che nei<lb n="160"/>
+                    nostri <w ana="arcaismo">Conservatorii</w> la <w type="archaic">coltura</w> intellettuale sia meno tra<lb n="161" break="no"/>scurata che altrove, perchè fra noi esistono parecchi corsi<lb n="162"/>
+                    letterari; ma è altresì vero che non danno in ciò risultati<lb n="163"/>
+                    efficaci, per ottenere i quali bisognerebbe che tutti gli alunni<lb n="164"/>
+                    fossero assolutamente obbligati a frequentarli. <w type="archaic">A'</w> nostri<lb n="165"/>
+                    empi <seg ana="conservatori">non è più tollerabile che gli artisti, levati da quella<lb n="166"/>
+                    parte musicale che hanno studiato, non sappiano nulla:</seg><lb n="167"/>
+                    tanto è vero che i più celebri maestri moderni hanno sen<lb n="168" break="no"/>tito il bisogno di procurarsi da sè stessi un’istruzione let<lb n="169" break="no"/> <pb n="3"/>
+                    eraria, artistica e scientifica svariatissima. <persName role="author" type="real"><surname>Mendelssohn</surname></persName><lb n="170"/>
+                    <persName role="author" type="real"><surname>Chopin</surname></persName>, <persName role="author" type="real"><surname>Schumann</surname></persName>, <persName role="author" type="real"><surname>Liszt</surname></persName>, <persName role="author" type="real"><surname>Berlioz</surname></persName>, <persName role="author" type="real"><surname>Saint-Saëns</surname></persName>, <persName role="author" type="real"><surname>Gevaert</surname></persName>,<lb n="171"/>
+                    <persName role="author" type="real"><surname>Wagner</surname></persName> e tanti altri son lì a provarlo.<lb n="172"/>
+                </p>
+                <p>
+                    <seg ana="conservatori">Dai <w ana="arcaismo">Conservatorii</w> però si avrebbe diritto di attendere su<lb n="173"/>
+                    tal punto un aiuto ben maggiore:</seg> e ad appoggiare quanto<lb n="174"/>
+                    diciamo, trascriviamo le seguenti parole che <w type="archaic">leggonsi</w> nel<lb n="175"/>
+                    <title level="m" rend="italic">Disegno di Statuto per I’ Università musicale di Napoli</title>, con<lb n="176"/>
+                    cui alcuni egregi uomini (all'<w type="archaic">uopo</w> eletti) propongono le<lb n="177"/>
+                    riforme necessarie a qual Conservatorio: <q>"lo studio delle<lb n="178"/>
+                    lettere amplia le idee, allarga l’orizzonte delle conoscenze,<lb n="179"/>
+                    ed è raro che un artista privo di questo soccorso possa di<lb n="180" break="no"/>venire creatore."</q> Non è certo il nostro voto quello di veder <lb n="181"/>
+                    uscire dagli istituti musicali <w type="archaic">de'</w>’ giovani maestri molto in<lb n="182" break="no"/>farinati di letteratura e mediocri o cattivi musicisti : ma cre<lb n="183" break="no"/>
+                    diamo che una cosa non debba escluder l’altra, e che queste<lb n="184"/>
+                    due luci unite insieme possano mandare un fulgore dop<lb n="185" break="no"/>piamente splendido.<lb n="186"/>
+                </p>
+                <p>
+                    Per riassumere, ecco quali sarebbero le condizioni ne<lb n="187" break="no"/>cessarie a rendere i nostri <w ana="arcaismo">conservatorii</w> molto migliori e<lb n="188"/>
+                    quindi molto più utili all'arte: 1° Un buon direttore, com<lb n="189" break="no"/>preso del suo sacro mandato. 2° Buoni professori <hi rend="italic">in ogni<lb n="190"/>
+                    ramo</hi>, che insegnino ai giovani tutto quello che un vero <lb n="191"/>
+                    musicista deve <hi rend="italic">sapere e saper fare</hi>, che aiutino i loro disce<lb n="192" break="no"/>poli a sentire e comprendere il bello, ovunque si trovi.<lb n="193"/>
+                    3° Creare un'atmosfera sana coll'accurata esecuzione collet<lb n="194" break="no"/>tiva delle opere dei grandi maestri del passato e del presente, <lb n="195"/>
+                    nostrali e forestieri, perchè l'arte è <hi rend="italic">una</hi>; e in quest'atmo<lb n="196"/>
+                    sfera saranno efficacemente fecondati i germi che l'istruzione<lb n="197"/>
+                    parziale <w ana="archaic">de'</w> buoni maestri avrà fatto nascere. 4° Dare il<lb n="198"/>maggiore sviluppo possibile alla cultura intellettuale e se<lb n="198" break="no"/>
+                    gnatamente alla letteraria, sempre coll'occhio rivolto allo<lb n="199"/>
+                    scopo cui deve servire, cioè quello di porgere un benefico<lb n="200"/>
+                    aiuto alla musica.<lb n="201"/>
+                </p>        
+             </div>
+             <!-- Sezione bibliografia, prime due occorrenze fas. 2 vol. 1-->
+            <div type="textArticle" xml:id="bibliografia">
+                <pb facs="screenpagine/biblio1.jpg"/>
+                <pb facs="screenpagine/biblio2.jpg"/>
+                <head>Bibliografia</head>
+             <div n="4" xml:id="sezioneBibliografia">
+                <pb n="4"/>
+                <head xml:id="AM">
+                    <persName role="author">
+                        <forename>Alessandro</forename> 
+                        <surname>Manzoni</surname>
+                    </persName>. 
+                    <title level="m" rend="italic">Del trionfo della Libertà</title>. 
+                    Poema inedito. - 
+                    <placeName type="city">Milano</placeName>, 
+                    <date>1878</date>.
+                </head>
+                <lb n="1"/>
+                <p>
+                    Se degli uomini illustri giovi pubblicare tutto quello che<lb n="2"/>
+                    scrissero anche quando erano fanciulli, è una questione che<lb n="3"/>
+                    resta a risolversi. Certo le loro produzioni infantili non<lb n="4"/>
+                    possono essere considerate che come documenti per la sto<lb n="5" break="no"/>
+                    ria del loro pensiero. Pretendere di presentarle al pubblico<lb n="6"/>
+                    come opere d'arte non si può e non si deve. E forse anche<lb n="7"/>
+                    come documento, questo poemetto del <persName role="author" type="real"><surname>Manzoni</surname></persName> poteva ri<lb n="8" break="no"/>manere inedito senza troppo danno per noi. Esso non ci <lb n="9"/>
+                    dice nulla che già non sapessimo del poeta lombardo. Sa<lb n="10" break="no"/>pevamo benissimo del periodo irreligioso della sua vita;<lb n="11"/>
+                    sapevamo dell'amore con cui aveva studiato <persName role="author" type="real"><forename>Dante</forename></persName> el il<lb n="12"/>
+                    <persName role="author" type="real"><surname>Monti</surname></persName> : e queste sono le uniche cose che ci dicono nuova<lb n="13" break="no"/>mente i versi ora pubblicati. I quali, del resto, sono versi<lb n="14"/>
+                    di un fanciullo di quindici anni, che portano impressi tutti<lb n="15"/>
+                    i difetti dell'età infantile, e che l'Autore stesso aveva ri<lb n="16" break="no"/>fiutati. Nè il signor <persName type="real"><surname>Romussi</surname></persName> che li ha messi in luce, nello<lb n="17"/>
+                    studio che fa precedere al poema, dà sempre segno di un<lb n="18"/>
+                    giusto criterio letterario. Non tutti, per esempio, potranno<lb n="19"/>
+                    convenire con lui che negli <title level="m" rend="italic">Inni sacri</title> <q>"sia espressa l'idea<lb n="20"/>
+                    del progresso universale cui tendiamo",</q> nè che il <persName role="author" type="real"><surname>Manzoni</surname></persName><lb n="21"/>
+                    sia <q>"poeta anche e soprattutto nella<title level="m" rend="italic">Morale Cattolica</title>."</q><lb n="22"/>
+                    Non tutti gli meneranno buono che il <persName role="author" type="real"><surname>Monti</surname></persName> non facesse<lb n="23"/>
+                    altro che "galvanizzare il classicismo." Ed, in un altro<lb n="24"/>
+                    ordine di fatti, molti non approveranno che, parlando di<lb n="25"/>
+                    <persName role="author"><forename>Carlo</forename><surname>Porta</surname></persName>, egli dica di augurarsi <q>"che il carattere am<lb n="26" break="no"/>brosiano abbia a formarsi sopra esempi migliori;"</q> nè che,<lb n="27"/>
+                    parlando di <persName type="real"><forename>Massimiliana</forename> <surname>Cislago</surname></persName>, moglie di <persName type="real"><forename>Leopoldo</forename> <surname>Ci<lb n="28" break="no"/>cognara</surname></persName>,
+                    copii le parole del signor <persName role="author" type="real"><surname>Cantù</surname></persName>, senza tenere conto<lb n="29"/>
+                    che del fatto da lui narrato non si trova traccia (come<lb n="30"/>
+                    altri notò) nè nelle <title level="m" rend="italic">Memorie</title> nè nella <title level="m" rend="italic">Corrispondenza</title> del <persName role="author" type="real"><surname>Ci<lb n="31" break="no"/>cognara</surname></persName> i
+                    stesso.<lb n="32"/>
+                </p>
+             </div>
+             <div n="5" xml:id="sezioneBibliografia1">
+                <pb n="5"/>
+                <head xml:id="FS">
+                    <persName role="author">
+                        <forename>
+                            <abbr>F.</abbr>
+                            <ex>rancesco</ex>
+                            <expan>Francesco</expan>
+                        </forename>
+                        <surname>Saraceno</surname>
+                    </persName>
+                    <title rend="italic">Giullari, Menestrelli, Viaggi, Imprese guerresche<lb n="1"/>
+                    dei Principi d'Acaia
+                    </title> 
+                    (<date from="1295" to="1395">1295-1395</date>). 
+                    Dalle 
+                    <title rend="italic">
+                        Curiosità e Ricer<lb n="2"/>
+                        che di Storia Subalpina.
+                    </title> 
+                    <placeName type="city">Torino</placeName>,
+                    <date>1877</date>. 
+                </head>
+                <lb n="3"/>
+                <p>
+                    Il titolo di questo scritto promette assai per gli studiosi<lb n="4"/>
+                    del <date from="476" to="1492">Medioevo</date>, ma non ci pare che mantenga tutto quello<lb n="5"/>
+                    che promette.L'autore scrive che <persName role="author" type="real"><forename>Giraud</forename> <surname>Riquier</surname></persName> era un<lb n="6"/>
+                    trovatore, o <seg rend="italic">più propriamente un troviere</seg>. Non intendiamo<lb n="7"/>
+                    bene quello che abbia voluto dire. Fra i <foreign rend="italic">troubadours</foreign> e i<lb n="8"/>
+                    <foreign rend="italic">trouvères</foreign> c'è una differenza sostanziale, poichè tutti sanno<lb n="9"/>
+                    che col primo di questi nomi sono designati i poeti della<lb n="10"/>
+                    <placeName type="country">Francia</placeName> meridionale, col secondo quelli della settentrionale.<lb n="11"/>
+                    <persName role="author" type="real"><forename>Giraud</forename> <surname>Riquier</surname></persName> è un <term type="literary">trovatore</term>, e molto imporprio sarebbe<lb n="12"/>
+                    chiamarlo un <term type="literary">trovéro</term>. In altro luogo l'autore ci racconta<lb n="13"/>
+                    che il <date when="1295-02-13">13 febbraio 1295</date> <persName role="royal" type="real"><forename>Filippo</forename> <addName type="dinasty">di Savoia-Piemonte</addName></persName> dette<lb n="14"/>
+                    un gran pranzo a <placeName type="city">Pinerolo</placeName>, al quale accorsero molti giul<lb n="15" break="no"/>
+                    lari, <q>"e due fra gli altri ce ne vennero, e d'una tal sorte<lb n="16"/>
+                    che neanche saprei ben dire cosa fossero, o se fossero<lb n="17"/>
+                    lazzi o destrezze, suoni o canti, novelle o sirvente le ame<lb n="18" break="no"/>nità con cui allietarono il festino a cui intervennero. Erano<lb n="19"/>
+                    d'una specie che si chiamavano <w rend="italic">goliardi</w>, il che risponde<lb n="20"/>
+                    forse a giullari d'una qualità più buffona e sfacciata degli<lb n="21"/>
+                    altri; e chi ami circa codesti goliardi qualche notizia, se<lb n="22"/> <pb n="1"/>
+                    non più determinata ed esatta, più estesa, ricorra a quel<lb n="23"/> 
+                    pozzo di scienza che si chiama il <title level="s">Du Cange</title>."</q> Veramente per<lb n="24"/>
+                    sapere quello che fossero i goliardi non importa ricorrere<lb n="25"/>
+                    al <title level="s">Du Cange</title>, <w type="archaic">dacchè</w> oramai parecchi libri furono scritti<lb n="26"/>
+                    intorno alla poesia ed alla vita goliardica. Ma ciò potrebbe<lb n="27"/>
+                    ancora perdonarsi, se almeno l'autore ci avesse fatto sa<lb n="28" break="no"/>pere d'onde ha tratto la notizia ch'egli offre ai lettori, e<lb n="29"/>
+                    che potrebbe essere di molta importanza. È noto infatti<lb n="30"/>
+                    come l'esistenza di <w rend="italic">goliardi</w> italiani sia messa in dubbio da<lb n="31"/>
+                    alcuni: onde il trovare due di essi, nel <date when="1295">1295</date>, a un pranzo<lb n="32"/>
+                    di nozze in <placeName type="city">Pinerolo</placeName>, potrebbe chiarire, almeno in parte, la<lb n="33"/>
+                    questione. È quindi da deplorare che non ci sia stato fatto<lb n="34"/>
+                    conoscere il testo da cui la notizia fu tratta, e le parole<lb n="35"/>
+                    precise di esso. E, del resto, questo sistema di dare, in la<lb n="36" break="no"/>vori eruditi, le notizie, senza l'esatta citazione della fonte,<lb n="37"/>
+                    è sempre condannabile. Ora, tutto quanto lo scritto di cui<lb n="38"/>
+                    ci occupiamo è condotto così, e perde per conseguenza<lb n="39"/>
+                    molta della sua importanza. L'autore poteva benissimo ri<lb n="40" break="no"/>sparmiarsi di citare o il <persName role="author" type="real"><surname>Fétis</surname></persName> o il <persName role="author" type="real"><surname>Cibrario</surname></persName>, e citare invece<lb n="41"/>
+                    il testo delle carte sulle quali studiava. In lavori di questo<lb n="42"/>
+                    genere bisogna sempre mirare ad aggiungere qualche cosa<lb n="43"/>
+                    di esatto, di determinato, di preciso alle notizie che già si<lb n="44"/>
+                    posseggono sull'argomento; e bisogna anche mirare a<lb n="45"/>
+                    scrivere piuttosto per i dotti che per i dilettanti. In caso<lb n="46"/>
+                    diverso è fatica sprecata. Se il <persName role="author" type="real"><roleName>signor</roleName> <surname>Saraceno</surname></persName> volesse, ri<lb n="47" break="no"/>facendo il lavoro, non disprezzare i nostri modesti suggeri<lb n="48" break="no"/>menti, il suo scritto potrebbe riuscire di molto interesse<lb n="49"/>
+                    per tutti coloro che si occupano della storia medievale.<lb n="50"/>             
+                </p>
+             </div>
+            </div>
+             <!-- Notizie fas. 2 vol. 1-->
+            <div type="textArticle" xml:id="sezionenotizie">
+                <head>Sezione notizie: volume 1, fascicolo 2</head>
+                <pb facs="screenpagine/notizie1.jpg"/>
+
+             <div n="5" type="notizie" xml:id="sezioneNotizie">
+                <pb n="6"/>
+                <head xml:id="N1">
+                    NOTIZIE
+                </head>
+                <lb n="1"/>
+                <p>
+                    - Insieme col libro del <persName role="author" type="real"><surname>Sacchetti</surname></persName> è uscito: <title level="m" rend="italic">Una fra tante</title> di <persName role="author" type="real"><forename>Emma</forename></persName>,<lb n="2"/>
+                    e <title level="m" rend="italic">Vecchie Catene</title> di <persName role="author" type="real"><forename>Necra</forename></persName>. Quello di <persName role="author" type="real"><forename>Emma</forename></persName> ci sembra il più importante<lb n="3"/>
+                    dei tre e ne parleremo quanto prima. È destinato a far chiasso per<lb n="4"/>
+                    l'argomento su cui versa, per la maniera <w type="archaic">ond'è</w> trattato e perchè chi lo<lb n="5"/>
+                    scrive è una donna. <title level="m" rend="italic">Una fra tante</title> è una di quelle povere vittime che<lb n="6"/>
+                    la società immola a sè stessa, affinchè le rimanga tempo e spazio da<lb n="7"/>
+                    innalzare altari alla moralità, alla famiglia. Figuratevi la santa indi<lb n="8" break="no"/><pb n="1"/>gnazione degl'ipocriti e de' farisei davanti a una donna che osa toccare<lb n="9"/>
+                    codeste piaghe (tanto comode per loro), e ne scrive senza meschino<lb n="10"/>
+                    imbarazzo, spinta dal più nobile sentimento umano!<lb n="11"/>
+                </p>
+                <p>
+                    - Tra le poesie che stampa il <orgName type="publisher">Casanova</orgName> di <placeName type="city">Torino</placeName> ci sono quelle<lb n="12"/>
+                    inedite di <persName role="author"><forename>Emilio</forename> <surname>Praga</surname></persName>: <title level="m" rend="italic">Trasparenza</title>. Si fa pure una ristampa delle al<lb n="13"/>
+                    tre poesie di questo poeta: <title level="m" rend="italic">Penombre</title>, <title level="m" rend="italic">Fiabe e leggende</title>, <title level="m" rend="italic">Tavolozza</title>.<lb n="14"/>
+                </p>
+                <p>
+                    - È da un pezzo che si annunzia <title level="m" rend="italic">La desinenza in A</title> del <persName role="author" type="real"><surname>Dossi</surname></persName>;<lb n="15"/>
+                    ora sta per uscire<lb n="16"/>
+                </p>
+                <p>
+                    - Alla <orgName type="history">R. Deputazi. di Storia Patria di Modena,</orgName>, nell'adunanza del <date when="1877-11-17">17 novembre 1877</date>,<lb n="17"/>
+                    il <persName type="real"><roleName><abbr>march.</abbr> <ex>ese</ex> <expan>marchese</expan> </roleName> <forename>Giuseppe</forename> <surname>Campori</surname></persName> ha letto una notizia sulla<lb n="18"/>
+                    vita di <persName type="real"><roleName>don</roleName><forename>Carlo</forename> <surname>Filippo</surname> <genName>II</genName></persName> re di <placeName type="country">Spagna</placeName>, desunta dai carteggi<lb n="19"/>
+                    contemporanei di <placeName type="city">Madrid</placeName>, con ragguagli in parte sconociuti. Nell'adu<lb n="20"/>
+                    nanza del <date when="1877-12-04">4 dicembre</date>; il <persName type="real"><roleName><abbr>march.</abbr> <ex>ese</ex> <expan>marchese</expan></roleName> <forename>Cesare</forename> <surname>Campori</surname></persName> ha discorso delle rela<lb n="21"/>
+                    zioni tra la regina di <placeName type="country">Svezia</placeName> e gli <orgName type="dynasty">Estensi</orgName> (<date from="1601" to="1700">secolo 17°</date>): e il signor <persName type="real"><forename>An<lb n="22" break="no"/>tonio</forename> <surname>Bertolotti</surname></persName>
+                    ha dato notizia del processo fatto fare da <persName role="history" type="real"><forename>Paolo</forename> <genName>III</genName></persName> negli<lb n="23"/>
+                    anni <date from="1548" to="1549">1548 e 49</date> contro gli uccisori del suo figliolo <persName role="politician" type="real"><forename>Pierluigi</forename> <surname>Farnese</surname></persName>.<lb n="24"/>
+                </p>
+                <p>
+                    - In uno dei futuri fascicoli del <title level="j">Journal des Savants</title>, il signor <persName role="philosopher" type="real"><forename>Er<lb n="25" break="no"/>nesto</forename> <surname>Renan</surname></persName>
+                    scriverà su gli studi che il <persName role="teacher" type="real"><roleName>professore</roleName> <forename>Fausto</forename> <surname>Lasinio</surname></persName> va<lb n="26"/>
+                    pubblicando intorno ad <persName role="philosopher" type="real"><surname>Averroe</surname></persName>.<lb n="27"/>
+                </p>
+                <p>
+                    - <title level="m" rend="italic">Les deux Renée</title> è il titolo di uno studio del <persName role="teacher" type="real"><roleName> <abbr>prof.</abbr><ex>essor</ex><expan>professor</expan> </roleName> <forename>Marc</forename> <surname>Monnier</surname></persName>,<lb n="28"/>
+                    il quale potrà giovare a chi si accingerà a scrivere la storia della <eventName>Ri<lb n="29" break="no"/>forma in <placeName type="country">Italia</placeName></eventName>.
+                    È inserito nella <orgName type="publisher" rend="italic">Bibliothèque Universelle et Revue Suisse</orgName>, <lb n="29"/>
+                    <date from="1877-11" to="1877-12">nov. e dec. 1877</date>.<lb n="30"/>
+                </p>
+                <p>
+                    - È uscito il 4° vol. del <bibl><title level="m" rend="italic">Codex diplomaticus Cavensis</title> (<pubPlace>Napoli</pubPlace>)</bibl>: i tre<lb n="31"/>
+                    volumi precendenti si pubblicarono negli anni <date from="1873" to="1876">1873-76</date>. L'intera raccolta<lb n="32"/>
+                    dovrà comprendere tutti i documenti <orgName type="archive">dell'Archivio della Badia della Cava<lb n="33"/>
+                    dei Tirreni</orgName>, <date notBefore="1300">anteriori al secolo 13°</date>. I documenti sinora pubblicati sono 707,<lb n="34"/>
+                    <date from="792" to="1018">dall'a. 792 al 1018</date>. Questa pubblicazione è di molta importanza per lo<lb n="35"/>
+                    studio del diritto privato longobardo, ed è fatta con assai diligenza.<lb n="36"/>
+                </p>
+                <p>
+                    - <orgName type="archive">L'Archivio di Stato in <placeName type="city">Roma</placeName></orgName> ha ricevuto in dono dal <persName type="real"><roleName>signor</roleName> <forename>Augusto</forename> <surname>Castellani</surname></persName><lb n="37"/>
+                     il codice originale degli <title level="m">Statuti del Collegio dei Medici<lb n="38"/> 
+                    di Roma</title>, del <date when="1531">1531</date>.<lb n="39"/>
+                </p>
+                <p>
+                    - <orgName type="pubisher" rend="italic">L'Economiste francais</orgName> riporta nei due ultimi numeri parte del di<lb n="40" break="no"/>
+                    scorso con cui <persName role="economist" type="real"><forename><choice><abbr>M.</abbr> <expan>Michel</expan></choice></forename> <surname>Chevalier</surname></persName> apriva pochi giorni or sono il suo corso di<lb n="41"/>
+                    Economia politica al <orgName type="educational">Collegio di Francia</orgName>. Il celebre economista parlò<lb n="42"/>
+                    contro il sistema dei brevetti d'invenzione mostrando le frodi cui davano<lb n="43"/>
+                    luogo ed appoggiandosi all'opinione di grandi industriali inglesi e francesi.<lb n="44"/>
+                </p>
+                <p>
+                    - Fra non molto tempo sarà pubblicata la corrispondenza di <persName><forename>Ric<lb n="45" break="no"/>cardo</forename> <surname>Cobden</surname>.</persName>
+                    Le figlie di lui la radunano ed ordinano, e per conseguire<lb n="46"/>
+                    meglio lo scopo si rivolgono pubblicamente a tutti quelli che possie<lb n="47" break="no"/>dono lettere del defunto loro padre, pregandoli a voler loro inviarle.<lb n="48"/>
+                </p>
+                <p>
+                    - Nella provincia di <placeName type="city">Roma</placeName> anche <date from="1877-01" to="1877-12">durante l'anno 1877</date> sono stati<lb n="49"/>
+                    celebrati un gran numero di matrimoni col solo rito religioso; essi oltre<lb n="50" break="no"/>passano i 2000.<lb n="51"/>
+                </p>
+                <p>
+                    - Il bellissimo sarcofago di terracotta scoperto a <placeName type="city">Chiusi</placeName>, in una<lb n="52"/>
+                    proprietà del nobile <persName role="nobil" type="real"><roleName>signor</roleName> <forename>Pietro</forename> <surname>Bonci-Casuccini</surname></persName> nel passato inverno,<lb n="53"/>
+                    fu fatto acquistare dal <persName><roleName>Ministro della Pubblica istruzione</roleName></persName> per farlo col<lb n="54" break="no"/>locare nel <orgName type="museum">Museo etrusco fiorentino</orgName>, accanto all'alto sarcofago scoperto<lb n="55"/>
+                    a <placeName type="city">Corneto-Tarquinia</placeName> <w type="archaic">maraviglioso</w> per le sue pitture. Il nuovo monumento,<lb n="56"/>
+                    porta sul coperchio una statua di giovane donna, di grandezza quasi<lb n="57"/>
+                    naturale, seduta sul letto funebre, ed in atto di acconciarsi il velo<lb n="58"/>
+                    mentre si guarda in uno specchio. Si sono conservati quasi intatti i<lb n="59"/>
+                    colori degli abiti e degli ornamenti. Il <persName type="real"><roleName>ministro</roleName> <surname>Coppino</surname></persName> ha dato ordine<lb n="60"/>
+                    che il detto sarcofago sia esposto per qualche poco in <placeName type="city">Roma</placeName> nel <orgName type="museum">Museo Kircheriano</orgName>,<lb n="61"/>
+                     dove fu trasportato recentemente.<lb n="62"/>
+                </p>
+                <p>
+                    - Il <persName type="real"><roleName>capitano</roleName> <surname>Howgate</surname></persName> del <orgName type="govern" rend="italic">War Department</orgName>, <placeName type="city">Washington</placeName>, <placeName type="country">Stati Uniti</placeName>,<lb n="63"/>
+                    ha ideato un nuovo progetto di esplorazione artica: egli propone di<lb n="64"/>
+                    stabilire una colonia entro il <placeName type="region">circolo artico</placeName> come centro di esplora<lb n="65"/>
+                    zione. Nella qualità di pioniere è già partito il <persName type="real"><roleName>capitano</roleName> <surname>Tyson</surname></persName>, già<lb n="66"/>
+                    della <objectName type="ship" rend="italic">Polaris</objectName>, al comando della nave <objectName type="ship" rend="italic">Florence</objectName>; egli svernerà in <placeName type="region">Groen<lb n="67" break="no"/>landia</placeName>,
+                    ove cercherà di avere la cooperazione degli <orgName type="ethnic">Eschimesi</orgName>. Nel ven<lb n="68"/>
+                    turo agosto egli sarà raggiunto a <placeName type="other">Disco</placeName> dal <persName><roleName>capitano</roleName> <surname>Howgate</surname></persName> il quale<lb n="69"/>
+                    lavora attivamente per effettuare nel modo più completo il suo pro<lb n="70" break="no"/>getto. Sappiamo che questi ebbe già l'offerta della personale coopera<lb n="71" break="no"/>zione del <persName type="real"><roleName>signor</roleName> <forename><choice><abbr>W.</abbr><expan>Wilfrid</expan></choice></forename> <surname>de Fonvielle</surname></persName> il quale porterebbe la sua esperienza<lb n="72"/>
+                    da areonauta ed applicherebbe l'uso del pallone aerostatico alla esplo<lb n="73" break="no"/>razione delle poco accessibili terre polari.<lb n="74"/>
+                </p>
+             </div>
+            </div>
+             <!-- Sezione notizie 2: vol. 2 fas. 44-->
+            <div type="textArticle" xml:id="sezionenotizie1">
+                <head>Sezione notizie: volume 2, fascicolo 44</head>
+                <pb facs="screenpagine/notizie2.jpg"/>
+
+             <div n="6" type="notizie" xml:id="sezioneNotizie1">
+                <pb n="7"/>
+                <head xml:id="N2">
+                    NOTIZIE
+                    <lb n="75"/>
+                </head>
+                <p>
+                    - Il <persName type="real"><roleName>colonnello</roleName> <forename> <choice><abbr>W.</abbr><expan>Wilhem</expan></choice></forename> <surname>Rustow</surname></persName>, lo storico militare delle guerre del <date when="1861">1861</date>,<lb n="76"/>
+                    <date when="1866">1866</date> e <date from="1870" to="1871">1870-1871</date>, ha compiuto avanti la sua morte una <w type="archaic">istoria</w> simile<lb n="77"/>
+                    della <eventName type="war">guerra d'Oriente</eventName>, che sta per essere pubblicata a <placeName type="city">Zurigo</placeName>.<lb n="78"/>
+                    (<orgName type="publisher" rend="italic">Academy</orgName>)<lb n="79"/>
+                </p>
+                <p>
+                    - I giornali di <placeName type="city">Dublino</placeName> hanno annunziato recentemente la morte<lb n="80"/>
+                    di <persName type="real"><roleName>Sir</roleName> <forename>Richard</forename> <surname>Griffith</surname></persName>, <choice><sic>mineralogo</sic><corr>minerologo</corr></choice>  e ingegnere distinto, a cui dobbiamo,<lb n="81"/>
+                    tra altre cose, la scoperta del nickel e le sue prime applicazioni indu<lb n="82" break="no"/>striali. <persName type="real"><roleName>Sir</roleName> <forename>Richard</forename> <surname>Griffith</surname></persName> ha esercitato varie volte importanti fun<lb n="83" break="no"/>zioni ufficiali in <placeName type="country">Irlanda</placeName>, ed ha pubblicato parecchie opere sulla geologia<lb n="84"/>
+                    e le miniere. È morto all’età di ottantun’anno. (<orgName type="publisher" rend="italic">Revne Scientifique</orgName>)<lb n="85"/>
+                </p>
+                <p>
+                    - La <orgName type="publisher" rend="italic">Revue de Géographie</orgName> annunzia che <persName type="real"><roleName>l'abate</roleName> <surname>Debaize</surname></persName>, il quale<lb n="86"/>
+                    ha intrapreso di traversare il <placeName type="natural">continente africano</placeName>  esplorando per strada<lb n="87"/>
+                    la regione dei grandi laghi, ha lasciato <placeName type="region">la Costa di <placeName type="city">Zanzibar</placeName></placeName> negli ultimi <lb n="88"/>
+                    giorni di luglio. Egli si dirige verso l’<placeName type="region">Ounyamouezi</placeName>, ed è possibile che<lb n="89"/>
+                    avanti la fine dell'anno si senta il suo arrivo a <placeName type="other">Oourombo</placeName>, residenza di<lb n="90"/>
+                    <persName role="king" type="real"><forename>Mirambo</forename></persName>, quel re negro di cui la figlia è maritata al <persName type="real"><roleName>signor</roleName> <surname>Broyon</surname></persName>. Egli<lb n="91"/>
+                    è accompagnato da una carovana di oltre 300 uomini.<lb n="92"/>
+                </p>
+                <p>
+                    - <orgName type="publisher" rend="italic">Athenoeum</orgName> annunzia che grazie agli sforzi di <persName type="real"><forename>Mormuzd</forename> <surname>Rassam</surname></persName><lb n="93"/>
+                    appoggiati da <persName type="real"><roleName>Sir.</roleName> <forename><choice><abbr>A.</abbr><expan>Austen</expan></choice></forename> <forename><choice><abbr>H.</abbr><expan>Henry</expan></choice></forename> <surname>Layard</surname></persName>, i direttori del <orgName type="museum">Museo Britannico</orgName> hanno<lb n="94"/>
+                    ottenuto dalla <orgName>Porta</orgName> un firmato che permette loro di fare esplorare a<lb n="95"/>
+                    fondo la<placeName type="region">Mesopotamia</placeName>. Il firmato si estenderà agli interi pascialicati<lb n="96"/>
+                    di <placeName type="city">Mossoul</placeName> e di <placeName type="city">Bagdad</placeName>, e comprenderà le regioni finora inesplorate<lb n="97"/>
+                    della <placeName type="region">Babilonia meridionale</placeName>.<lb n="98"/>
+                </p>
+                <p>
+                    - Si hanno notizie del <persName type="real"><roleName>prof.</roleName> <surname>Nordenskiöld</surname></persName> dalla foce del <placeName type="natural">fiume<lb n="99"/>
+                    Lena</placeName>, 900 miglia a levante dell'<placeName type="natural">Jenissei</placeName>. Di là egli ha proseguito alla<lb n="100"/>
+                    volta dello <placeName type="natural">stretto di Behring</placeName> ed a quest'ora, se la sorte gli è stata<lb n="101"/>
+                    propizia, deve trovarsi nelle acque del <placeName type="sea">Pacifico</placeName>. Ma quando anche le<lb n="102"/>
+                    circostanze lo costringessero a svernare sulla costa inospitale della <placeName type="region">Si<lb n="103" break="no"/>beria orientale</placeName>,
+                     l'essere stato il primo a superare il capo più settentrio<lb n="104"/>
+                    nale dell'<placeName type="continent">Asia</placeName> gli assicura un posto cospicuo fra gli esploratori del polo<lb n="105"/>
+                    artico. (<orgName type="publisher" rend="italic">Academy</orgName>)<lb n="106"/>
+                </p>
+                <p>
+                    - Nella scuola addetta al <foreign rend="italic">Free Hospital</foreign> (ospedale libero) di <placeName type="city">Londra</placeName>,<lb n="107"/>
+                    la sessione medica <date when="1878">dell'anno 1878</date> è stata aperta con un discorso della<lb n="108"/>
+                    giovane e leggiadra <persName type="real"><roleName>signorina</roleName> <forename>Edith</forename> <surname>Peechey</surname></persName>, che occupa una Cattedra<lb n="109"/>
+                    in quella scuola. Il suo discorso è stato applauditissimo.<lb n="110"/>
+                    (<orgName type="publisher" rend="italic">Revue Britannique</orgName>)<lb n="111"/>
+                </p>
+             </div>
+            </div>
+        </body>
+    </text>
+</TEI>
